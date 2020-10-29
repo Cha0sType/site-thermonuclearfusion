@@ -4,19 +4,19 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
 1
 @app.route('/iter')
 def iter():
-    return "Iter side in progress"
+    return render_template('./Iter/iter_index.html')
 
 @app.route('/basics')
 def basics():
-    return "Basics of nuclear fusion reactor side in progress"
+    return render_template('./Basics/basics_index.html')
 
 @app.route('/reactors')
 def reactors():
-    return "Reactors side in progress"
+    return render_template('./Reactors/reactor_index.html')
 
 if __name__ == '__main__':
     app.run(port=1234, debug=True, threaded=True)
