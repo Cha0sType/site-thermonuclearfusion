@@ -1,0 +1,10 @@
+
+Befor Sie die Website starten, müssen Sie erst den Server starten, ansonsten funktioniert das
+CSS nicht, genauso wenig wie einige Funktionen der Website. Um den Server starten zu können,
+brauchen Sie ein Gerät mit Python 3 und Flask (sudo python3 -m pip install flask). Nun starten Sie
+das 'main.py' Skript. Sie werden aufgefordert, einen freien Port einzugeben (1234 sollte normalerweise frei sein).
+Nachdem Sie dies getan haben, öffnen Sie 'localhost:IHR_PORT'. Dies könnte beispielsweise so aussehen:
+
+localhost:1234
+
+Fertig!
