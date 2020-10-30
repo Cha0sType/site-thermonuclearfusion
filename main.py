@@ -2,12 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-while not False:
-    try:
-        PORT = int(input("Bitte geben Sie einen freien Port ein "))
-        break
-    except:
-        print("Ungültige Eingabe!\n")
+PORT = 1234
 
 @app.route('/')
 def index():
@@ -26,4 +21,4 @@ def reactors():
     return render_template('./Reactors/reactor_index.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=1234, debug=True, threaded=True)
+    app.run(host='0.0.0.0', port=PORT, debug=True, threaded=True)

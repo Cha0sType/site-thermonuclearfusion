@@ -18,6 +18,10 @@
 
         <div class="header">
             <span onclick="location.href='/'" class="material-icons" style="font-size: 400%; margin-left: 10%; color: rgba(255, 255, 255, 0.8); cursor: pointer;">home</span>
+
+            <div class="inputLine"></div>
+            <input class="input" style="display: none; margin-bottom: 20px;">
+            <span onclick="search()" class="material-icons search" style="font-size: 370%; margin-left: 60.2%; color: rgba(255, 255, 255, 0.8); cursor: pointer;">search</span>
         </div>
         <!--div>
             <a href="basics"><button class="topbutton">Basics</button></a>
@@ -28,3 +32,48 @@
 
     </body>
 </html>
+<style>
+
+    @keyframes inputLine {
+        from {width: 0%;}
+        to {width: 9%;}
+    }
+
+    .inputLine {
+        position: absolute;
+        margin-left: 73%;
+        width: 0%;
+        height: 4px;
+        background-color: #12121B;
+    }
+
+    .input {
+        margin-left: 60.2%;
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .animateInputLine {
+        animation-name: inputLine;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
+</style>
+<script>
+
+    function search() {
+        document.getElementsByClassName('search')[0].style.marginLeft = "0%";
+
+        inputLine = document.getElementsByClassName('inputLine');
+        inputLine[0].classList.add('animateInputLine');
+        inputLine[0].style.width = "9%";
+
+        input = document.getElementsByClassName('input');
+        input[0].classList.add('animateInputLine');
+        input[0].style.width = "9%";
+        input[0].style.display = "block";
+    }
+
+</script>
