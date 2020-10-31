@@ -32,5 +32,15 @@ html {
               0 4px 4px rgba(0,0,0,0.12), 
               0 8px 8px rgba(0,0,0,0.12);
 
-    background: #29292B;
+    background: #29293B;
+}
+
+h1 {
+    margin-top: 4%;
+    margin-left: 7%;
+
+    font-family: 'Segoe UI';
+    font-size: 500%;
+    font-weight: normal;
+    color: #707070;
 }
