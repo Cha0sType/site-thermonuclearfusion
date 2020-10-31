@@ -1,4 +1,7 @@
 from flask import Flask, render_template
+import datetime
+
+time = datetime.datetime.now()
 
 app = Flask(__name__)
 
@@ -10,7 +13,7 @@ def index():
 1
 @app.route('/iter')
 def iter():
-    return render_template('./Iter/iter_index.html')
+    return render_template('./Iter/iter_index.html', var=time)
 
 @app.route('/basics')
 def basics():
