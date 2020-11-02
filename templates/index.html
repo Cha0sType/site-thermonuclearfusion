@@ -18,6 +18,7 @@
 
         <div class="header">
             <span onclick="location.href='/'" class="material-icons" style="font-size: 400%; margin-left: 6%; color: rgba(255, 255, 255, 0.8); cursor: pointer;">home</span>
+
             <div class="dropdown">
                 <button class="dropbtn">Themen</button>
                 <div class="dropdown-content">
@@ -26,9 +27,10 @@
                     <a href="/basics">Kernfusion</a>
                 </div>
             </div>
+
             <div class="inputLine"></div>
-            <input onfocusout="resetSearch()" class="input" style="display: none; margin-bottom: 20px;">
-            <span onclick="search()" class="material-icons search" style="font-size: 370%; margin-left: 63.45%; color: rgba(255, 255, 255, 0.8); cursor: pointer;">search</span>
+            <input onfocusout="resetSearch()" class="input" style="display: none; margin-bottom: 5px;">
+            <span onclick="search()" class="material-icons search" style="font-size: 370%; margin-left: 54.49%; color: rgba(255, 255, 255, 0.8); cursor: pointer;">search</span>
         </div>
 
         <h1>Willkommen!</h1>
@@ -54,20 +56,26 @@
     }
 
     @keyframes resetSearchIcon {
-        from { margin-left: 73%; }
-        to { margin-left: 63.45%; }
+        from { margin-left: 64.99%; }
+        to { margin-left: 54.49%; }
     }
 
     .inputLine {
         position: absolute;
         margin-left: 73%;
+        /* 
+           The inputLine should actually have been the same as
+           the resetSearchIcon margin-left value from 'from', but since
+           it's absolute, it's not being affected by the other header elements
+           and it needs to be a specific value higher.
+        */
         width: 0%;
         height: 4px;
         background-color: #12121B;
     }
 
     .input {
-        margin-left: 63.45%;
+        margin-left: 54.49%;
         background: transparent;
         border: none;
         
@@ -97,11 +105,12 @@
         animation-timing-function: ease-out;
     }
     
+
     .dropbtn {
         background-color: transparent;
-        color: white;
+        color: rgba(255, 255, 255, 0.8);
         padding: 16px;
-        font-size: px;
+        font-size: 130%;
         border: none;
     }
 
@@ -138,10 +147,10 @@
         display: block;
     }
 
-
     .dropdown:hover .dropbtn {
         background-color: transparent;
     }
+    
 </style>
 <script>
 
@@ -174,7 +183,7 @@
 
             input = document.getElementsByClassName('search');
             input[0].classList.add('resetSearchIcon');
-            input[0].style.marginLeft = "63.45%";
+            input[0].style.marginLeft = "54.49%";
 
             setTimeout(() => {
                 inputLine = document.getElementsByClassName('inputLine');

@@ -1,6 +1,8 @@
 
 html {
     background: #F2F2F2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Some similar looking font-families to make sure, the user sees the UI as we wish */
 }
 
 .header {
@@ -39,7 +41,6 @@ h1 {
     margin-top: 4%;
     margin-left: 7%;
 
-    font-family: 'Segoe UI';
     font-size: 500%;
     font-weight: normal;
     color: #707070;
