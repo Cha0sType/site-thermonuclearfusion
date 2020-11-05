@@ -13,7 +13,7 @@ PORT = 1234
 
 @app.route('/')
 def index():
-    return render_template('index.html', header=header.replace('--name--', "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal'>Kernfusionsreaktor</h2>"))
+    return render_template('index.html', header=header.replace('--name--', "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 160%; margin-bottom: 0.89%; margin-left: auto; left: 50%; margin-right: 50%; transform: translate(-50%, 0); position: absolute;'>Kernfusionsreaktoren</h2>"))
 
 @app.route('/iter')
 def iter():

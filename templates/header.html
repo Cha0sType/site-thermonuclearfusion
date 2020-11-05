@@ -1,3 +1,4 @@
+
 <div class="header">
     <span onclick="location.href='/'" class="material-icons" style="font-size: 400%; margin-left: 6%; color: rgba(255, 255, 255, 0.8); cursor: pointer;">home</span>
 
@@ -13,7 +14,7 @@
     <!-- In our main.py, the --name-- will be replaced by a h2 with the current website's name -->
     <div class="inputLine"></div>
     <input onfocusout="resetSearch()" class="input" style="display: none; margin-bottom: 5px;">
-    <span onclick="search()" class="material-icons search" style="font-size: 370%; margin-left: 54.49%; color: rgba(255, 255, 255, 0.8); cursor: pointer;">search</span>
+    <span onclick="search()" class="material-icons search" style="font-size: 370%; margin-left: 56%; color: rgba(255, 255, 255, 0.8); cursor: pointer;">search</span>
 </div>
 
 <style>
@@ -30,12 +31,12 @@
 
     @keyframes resetSearchIcon {
         from { margin-left: 64.99%; }
-        to { margin-left: 54.49%; }
+        to { margin-left: 56%; }
     }
 
     .inputLine {
         position: absolute;
-        margin-left: 73%;
+        margin-left: 72.687%;
         /* 
            The inputLine should actually have been the same as
            the resetSearchIcon margin-left value from 'from', but since
@@ -48,7 +49,7 @@
     }
 
     .input {
-        margin-left: 54.49%;
+        margin-left: 56%;
         background: transparent;
         border: none;
         
@@ -157,7 +158,7 @@
 
             input = document.getElementsByClassName('search');
             input[0].classList.add('resetSearchIcon');
-            input[0].style.marginLeft = "54.49%";
+            input[0].style.marginLeft = "56%";
 
             setTimeout(() => {
                 inputLine = document.getElementsByClassName('inputLine');
