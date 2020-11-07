@@ -7,13 +7,17 @@ header_html = open('templates/header.html')
 header = header_html.read()
 header_html.close()
 
+icon_svg = open('Icon.svg')
+icon = icon_svg.read()
+icon_svg.close()
+
 app = Flask(__name__)
 
 PORT = 1234
 
 @app.route('/')
 def index():
-    return render_template('index.html', header=header.replace('--name--', "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 160%; margin-bottom: 0.89%; margin-left: auto; left: 50%; margin-right: 50%; transform: translate(-50%, 0); position: absolute;'>Kernfusionsreaktoren</h2>"))
+    return render_template('index.html', icon=icon, header=header.replace('--name--', "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: auto; margin-left: 50%; transform: translateX(-50%); position: absolute;'>Kernfusionsreaktoren</h2>"))
 
 @app.route('/iter')
 def iter():

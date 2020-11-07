@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="238.459" height="408.739" viewBox="0 0 238.459 408.739">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #ebebeb;
+      }
+
+      .cls-2, .cls-4, .cls-6, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke: #242424;
+        stroke-width: 10px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linejoin: round;
+      }
+
+      .cls-5 {
+        fill: red;
+      }
+
+      .cls-7 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Gruppe_1" data-name="Gruppe 1" transform="translate(-268.861 -232.473)">
+    <rect id="Rechteck_1" data-name="Rechteck 1" class="cls-1" width="92" height="35" transform="translate(343 521)"/>
+    <path id="Pfad_1" data-name="Pfad 1" class="cls-2" d="M317.747,600c0,36.21,23.854,36.213,23.854,36.213h28.935s23.853,0,23.853-36.213" transform="translate(32.253)"/>
+    <path id="Pfad_2" data-name="Pfad 2" class="cls-3" d="M70.411-30.606H39.544c-.1,0-21.853.033-21.853,19.3,0,16.871,16.884,20.066,21.853,20.635.384.046,2.449.068,92.935.068,0,0,22.036-1.406,22.036-20.7,0-17.425-18.252-19.116-22.036-19.292-.077-.006-16.288-.006-16.288-.006" transform="translate(302.451 579.106)"/>
+    <line id="Linie_1" data-name="Linie 1" class="cls-4" y1="18.933" transform="translate(340.5 529.567)"/>
+    <line id="Linie_2" data-name="Linie 2" class="cls-4" y1="18.933" transform="translate(436.14 529.567)"/>
+    <path id="Pfad_3" data-name="Pfad 3" class="cls-3" d="M71.088-30.6l-31.544-.006c-.1,0-21.853.033-21.853,19.3,0,16.871,16.884,20.066,21.853,20.635.384.046,2.449.068,92.935.068,0,0,22.036-1.406,22.036-20.7,0-17.425-18.252-19.116-22.036-19.292-.077-.006-6.366-.006-6.366-.006" transform="translate(474.657 495.894) rotate(180)"/>
+    <path id="Pfad_4" data-name="Pfad 4" class="cls-2" d="M340.5,433.3s3.663-16.646,0-29.663c-3.125-11.1-12.039-19.994-14.678-22.445,0,0-51.961-32.4-51.961-98.457s44.148-98.462,114.459-98.462" transform="translate(0 53.196)"/>
+    <path id="Pfad_5" data-name="Pfad 5" class="cls-2" d="M320.1,414.614a47.031,47.031,0,0,1,1.583-10.973c3.125-11.1,12.039-19.994,14.678-22.445,0,0,51.961-32.4,51.961-98.457s-44.148-98.462-114.459-98.462" transform="translate(114 53.196)"/>
+    <path id="Pfad_6" data-name="Pfad 6" class="cls-2" d="M-1.683,54.049S-3.273,42.672-1.683,33A56.438,56.438,0,0,1,4.68,15.343" transform="translate(298.5 288.5)"/>
+    <path id="Pfad_7" data-name="Pfad 7" class="cls-4" d="M-10.416,23.592s8.446-11.649,26.21-19.512,43.975-9.9,43.975-9.9" transform="translate(323.5 263.5)"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-5" transform="translate(331 381)">
+      <circle class="cls-7" cx="19" cy="19" r="19"/>
+      <circle class="cls-8" cx="19" cy="19" r="14"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" class="cls-6" transform="translate(345 370)">
+      <circle class="cls-7" cx="19" cy="19" r="19"/>
+      <circle class="cls-8" cx="19" cy="19" r="14"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" class="cls-6" transform="translate(326 362)">
+      <circle class="cls-7" cx="19" cy="19" r="19"/>
+      <circle class="cls-8" cx="19" cy="19" r="14"/>
+    </g>
+    <g id="Ellipse_4" data-name="Ellipse 4" class="cls-6" transform="translate(375 422)">
+      <circle class="cls-7" cx="8" cy="8" r="8"/>
+      <circle class="cls-8" cx="8" cy="8" r="3"/>
+    </g>
+    <g id="Ellipse_5" data-name="Ellipse 5" class="cls-5" transform="translate(398 301)">
+      <circle class="cls-7" cx="19" cy="19" r="19"/>
+      <circle class="cls-8" cx="19" cy="19" r="14"/>
+    </g>
+    <g id="Ellipse_6" data-name="Ellipse 6" class="cls-6" transform="translate(383 285)">
+      <circle class="cls-7" cx="19" cy="19" r="19"/>
+      <circle class="cls-8" cx="19" cy="19" r="14"/>
+    </g>
+    <g id="Ellipse_7" data-name="Ellipse 7" class="cls-6" transform="translate(449 279)">
+      <circle class="cls-7" cx="8" cy="8" r="8"/>
+      <circle class="cls-8" cx="8" cy="8" r="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="de">
     <head>
+
         <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Google's Material Design Icon Font, that alllows us to use Google-Icons on our Website -->
 
         <meta charset="UTF-8">
         <title>Kernfusionsreaktoren - Home</title>
-
 
     </head>
     <body>
@@ -15,12 +14,19 @@
         {{ header|safe }}
         
         <h1>Willkommen!</h1>
-        <!--div>
-            <a href="basics"><button class="topbutton">Basics</button></a>
-            <a href="reactors">Reactor Types</a>
-            <a href="iter">ITER</a>
-        </div> -->
 
+        <p>
+            Herzlich Willkommen auf unserer Website zum Thema Kernfusionsreaktoren.<br>
+            Bei uns wirst du lernen, was Kernfusion ist, wie sie funktioniert und<br>
+            warum sie so wichtig für die Zukunft der Menschheit sein könnte. Außerdem<br>
+            erfährst du über verschiede Kernfusionsreaktortypen und wie diese arbeiten und<br>
+            über ITER, ein voranschreitendes Projekt zur Verwirklichung des Traums eines<br>
+            jeden Physikers. Ein paar tolle Extras haben wir auch eingebaut =)<br>
+            Bist du bereit? Dann los!
+        </p>
+
+        {{ icon|safe }}
 
     </body>
+
 </html>
