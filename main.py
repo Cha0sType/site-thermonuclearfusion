@@ -7,7 +7,7 @@ header_html = open('templates/header.html')
 header = header_html.read()
 header_html.close()
 
-icon_svg = open('Icon.svg')
+icon_svg = open('static/Icon.svg')
 icon = icon_svg.read()
 icon_svg.close()
 
@@ -31,17 +31,17 @@ def basics():
 def reactors():
     return render_template('Reactors/reactor_index.html', header=header)
 
-@app.route('/Stellarator')
+@app.route('/stellarator')
 def stellarator():
-    return render_template('Reactors/Stellarator.html', header=header)
+    return render_template('Reactors/stellarator.html', header=header)
 
-@app.route('/Tokamak')
+@app.route('/tokamak')
 def tokamak():
-    return render_template('Reactors/Tokamak.html', header=header)
+    return render_template('Reactors/tokamak.html', header=header)
 
-@app.route('/Vergleich')
+@app.route('/vergleich')
 def vergleich():
-    return render_template('Reactors/Vergleich.html', header=header)
+    return render_template('Reactors/vergleich.html', header=header)
 
 
 

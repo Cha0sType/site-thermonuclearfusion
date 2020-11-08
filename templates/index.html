@@ -4,6 +4,7 @@
     <head>
 
         <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+        <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
 
         <meta charset="UTF-8">
         <title>Kernfusionsreaktoren - Home</title>
@@ -27,6 +28,17 @@
 
         {{ icon|safe }}
 
+        <pagebutton onclick="location.href='basics'" style="margin-left: 65vw; margin-top: -6vw;">
+            Was ist ein Kernfusionsreaktor?
+        </pagebutton>
+        <pagebutton onclick="location.href='iter'" style="margin-left: 65vw;">
+            Tokamak und Stellaratoren
+        </pagebutton>
+        <pagebutton onclick="location.href='reactors'" style="margin-left: 65vw; margin-top: 6vw;">
+            ITER - Ein europäisches Projekt
+        </pagebutton>
+
     </body>
 
 </html>
+<script src="{{url_for('static', filename='scripts/index.js')}}"></script>

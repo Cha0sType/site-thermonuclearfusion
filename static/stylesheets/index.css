@@ -54,3 +54,37 @@ svg {
     width: 10vw;
     height: auto;
 }
+
+pagebutton {
+    position: absolute;
+    display: block;
+    min-width: 20vw;
+    height: 5vw;
+
+    line-height: 5vw;
+    vertical-align: middle;
+    padding-left: 3.5vw;
+    padding-right: 2vw;
+    font-size: 1.51vw;
+
+    border-radius: 50vw;
+
+    background: none;
+    color: #707070;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: pointer;
+    transition: background 400ms, color 400ms, box-shadow 400ms;
+}
+
+pagebutton:hover {
+    background: white;
+    color: #4d4d4d;
+    box-shadow: 0vw 0.12vw 0.1vw 0.1vw rgba(0,0,0,0.12);
+}
