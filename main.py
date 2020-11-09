@@ -29,17 +29,17 @@ def basics():
 
 @app.route('/reactors')
 def reactors():
-    return render_template('Reactors/reactor_index.html', header=header)
+    return render_template('Reactors/reactor_index.html', header=header.replace('--name--', "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: auto; margin-left: 50%; transform: translateX(-50%); position: absolute;'>Reaktor Arten</h2>"))
 
-@app.route('/stellarator')
+@app.route('/reactors/stellarator')
 def stellarator():
-    return render_template('Reactors/stellarator.html', header=header)
+    return render_template('Reactors/Stellarator.html', header=header)
 
-@app.route('/tokamak')
+@app.route('/reactors/tokamak')
 def tokamak():
     return render_template('Reactors/tokamak.html', header=header)
 
-@app.route('/vergleich')
+@app.route('/reactors/vergleich')
 def vergleich():
     return render_template('Reactors/vergleich.html', header=header)
 
