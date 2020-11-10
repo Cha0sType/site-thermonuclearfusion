@@ -21,11 +21,12 @@ def index():
 
 @app.route('/iter')
 def iter():
-    return render_template('Iter/iter_index.html', time=time)
+    title = "ITER - Ein Forschungsprojekt in Europa"
+    return render_template('Iter/iter_index.html', header=header.replace('--name--', f"<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: auto; margin-left: 50%; transform: translateX(-50%); position: absolute;'>{title}</h2>"))
 
 @app.route('/basics')
 def basics():
-    return render_template('Basics/basics_index.html', header=header)
+    return render_template('Basics/basics_index.html', header=header.replace('--name--', "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: auto; margin-left: 50%; transform: translateX(-50%); position: absolute;'>Kerfusion</h2>"))
 
 @app.route('/reactors')
 def reactors():
