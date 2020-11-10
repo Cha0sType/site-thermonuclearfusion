@@ -36,6 +36,13 @@
         to { margin-left: 56.1vw; }
     }
 
+    @keyframes dropdownAnimation {
+        0% { transform: rotate(0deg); }
+        30% { transform: rotate(-5deg); }
+        70% { transform: rotate(17deg); }
+        100% { transform: rotate(0deg); }
+    }
+
     .inputLine {
         position: absolute;
         margin-left: 72.687vw;
@@ -81,7 +88,14 @@
         animation-timing-function: ease-out;
     }
 
+    .dropdownAnimation {
+        animation-name: dropdownAnimation;
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
+    }
+
     #dropdown-content {
+        overflow: hidden;
         display: none;
         position: absolute;
         background-color: #f7f7f7;
@@ -171,12 +185,22 @@
         }
     }
 
+    function dropdownAnimation() {
+        document.getElementById('dropdown').classList.add('dropdownAnimation');
+        setTimeout(() => {
+            document.getElementById('dropdown').classList.remove('dropdownAnimation');
+        }, 500);
+    }
+
     function toggleDropdown() {
-        if (document.getElementById('dropdown-content').style.display == 'none') {
-            document.getElementById('dropdown-content').style.display = 'block';
-        } else {
-            hideDropdown();
-        }
+        dropdownAnimation();
+        setTimeout(() => {
+            if (document.getElementById('dropdown-content').style.display == 'none') {
+                document.getElementById('dropdown-content').style.display = 'block';
+            } else {
+                hideDropdown();
+            }
+        }, 325) // It's shown/hidden 325ms later, because that's slightly before the animation is at 70%, so at the highest rotation value
     }
 
     function hideDropdown() {
