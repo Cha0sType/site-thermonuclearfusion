@@ -10,7 +10,7 @@
 
 <body>
     {{ header|safe }}
-    <h1>Der Tokamak-Reaktor</h1>
+    
     <p>Der Tokamak ist ein ringförmiger Fusionsreaktor. Er beruht auf der Methode des magnetischen Plasmaeinschlusses.
         Dabei besteht das Plasma aus Wasserstoffisotopen, dieses Plasma wird durch ein Magnetfeld zusammen gehalten,
         welches unteranderem durch Strom, der durch das Plasma fließt zusammen gehalten wird.<br> <br> Derzeit beruhen die
@@ -18,8 +18,7 @@
         Die Idee zum Tokamak entstand 1949 und kam vom russischen Wissenschaftler Oleg Alexandrowitsch Lawrentjew.
         Später wurde sie von Andrej Sacharow und Igor Tamm weiterentwickelt. Als erster Tokamak gilt der 1962 gebaute,
         russische T3.
-    </p>
-    <img src="https://en.wikipedia.org/wiki/Tokamak#/media/File:2017_TOCAMAC_Fusion_Chamber_N0689.jpg"
+    </p><img src="{{url_for('static', filename='tokamak.jpg')}}"
         alt="Hier ist ein Bild verloren gegangen...">
 </body>
 

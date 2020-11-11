@@ -24,7 +24,7 @@ def basics():
 
 @app.route('/reactors') #Creating reactors sub page and rendering specified template
 def reactors():
-    return render_template('Reactors/reactor_index.html', header=header.replace('--name--', "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: auto; margin-left: 50%; transform: translateX(-50%); position: absolute;'>Reaktor Arten</h2>"))
+    return render_template('Reactors/reactor_index.html', header=header.replace('--name--', "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: auto; margin-left: 50%; transform: translateX(-50%); position: absolute;'>Tokamak und Stellarator: Die Reaktoren der Kernfusion</h2>"))
 
 @app.route('/reactors/stellarator') #Creating stellerator sub page of reactors and rendering specified template
 def stellarator():
