@@ -18,6 +18,11 @@ def iter():
     title = "ITER - Ein Forschungsprojekt in Europa"
     return render_template('Iter/iter_index.html', header=header.replace('--name--', f"<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: auto; margin-left: 50%; transform: translateX(-50%); position: absolute;'>{title}</h2>"))
 
+@app.route('/iter/science')
+def science():
+    return render_template('Iter/iter_subpage1.html', header=header)
+
+
 @app.route('/basics') #Creating basics sub page and rendering specified template
 def basics():
     return render_template('Basics/basics_index.html', header=header.replace('--name--', "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: auto; margin-left: 50%; transform: translateX(-50%); position: absolute;'>Kerfusion</h2>"))
@@ -28,7 +33,7 @@ def reactors():
 
 @app.route('/reactors/stellarator') #Creating stellerator sub page of reactors and rendering specified template
 def stellarator():
-    return render_template('Reactors/Stellarator.html', header=header)
+    return render_template('Reactors/Stellarator.html', header=header.replace('--name--', "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: auto; margin-left: 50%; transform: translateX(-50%); position: absolute;'>ITER - Forschung in Europa</h2>"))
 
 @app.route('/reactors/tokamak') #Creating tokamak sub page of reactors and rendering specified template
 def tokamak():
