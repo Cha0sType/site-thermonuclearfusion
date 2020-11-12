@@ -11,12 +11,16 @@
     {{ header|safe }}
 
     <h1>Der Stellarator-Reaktor</h1>
-    <p>Der Stellarator besteht aus einer torusförmigen Anlage, um die herum Magnetspulen angesiedelt, die ein Magnetfeld
-        erzeugen, welches das Plasma im inneren des Reaktors zusammen hält.<br> <br> Die ersten Reaktoren hatten die Form einer
-        liegenden Acht, inzwischen werden jedoch Reaktoren mit einer symmetrischen Anordnung verwendet, um das
-        auseinander Driften des Reaktors zu verhindern.<br> <br>
-        Der Stellarator wurde 1951 von Lyman Spitzer in den USA entwickelt im Hintergrund des kalten Krieges nannte man
-        das Projekt Matterhorn, nach Veröffentlichung wurde es daher ebenfalls nach einem bayrischen Berg „Wendelstein“
+    <p>Der Stellarator besteht aus einer torusförmigen Anlage, um <br>die herum Magnetspulen angesiedelt, die ein
+        Magnetfeld
+        <br>erzeugen, welches das Plasma im inneren des Reaktors <br>zusammen hält.<br> <br> Die ersten Reaktoren hatten die
+        Form einer
+        liegenden Acht,<br> inzwischen werden jedoch Reaktoren mit einer symmetrischen <br>Anordnung verwendet, um das
+        auseinander Driften des <br>Reaktors zu verhindern.<br> <br>
+        Der Stellarator wurde 1951 von Lyman Spitzer in den USA <br>entwickelt im Hintergrund des kalten Krieges nannte
+        man
+        das <br>Projekt Matterhorn, nach Veröffentlichung wurde es daher <br>ebenfalls nach einem bayrischen Berg
+        „Wendelstein“
         benannt.
     </p> <img src="{{url_for('static', filename='img/stellarator_schematic.jpg')}}"
         alt="Hier ist ein Bild verloren gegeangen...">
@@ -24,3 +28,14 @@
 </body>
 
 </html>
+<style>
+    img {
+        z-index: -1;
+        width: 35vw;
+        height: auto;
+        margin-top: -28vw;
+        margin-left: 55vw;
+        position: absolute;
+    }
+</style>
+<script src="{{url_for('static', filename='scripts/index.js')}}"></script>

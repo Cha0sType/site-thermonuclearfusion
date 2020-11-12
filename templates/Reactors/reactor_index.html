@@ -2,14 +2,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/iter_index.css')}}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+    <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
     <title>Reactor Home</title>
 </head>
 
 <body>
+
     {{ header|safe }}
+    <h1>Die Reaktoren</h1>
     <p>
 
 
@@ -17,13 +20,13 @@
         Stellarator-Methode.<br>
         Diese beiden Methoden und ihr wesentlicher Unterschied werden hier erklärt.
     </p>
-
+    {{ icon|safe }}
     <pagebutton onclick="location.href='reactors/stellarator'" style="margin-left: 65vw; margin-top: -6vw;">
         Wie funktioniert ein Stellarator?</pagebutton>
-<br><br><br><br><br><br>
-        <pagebutton onclick="location.href='reactors/tokamak'" style="margin-left: 65vw; margin-top: -6vw;">
-            Wie funktioniert ein Tokamak?</pagebutton>
 
+    <pagebutton onclick="location.href='reactors/tokamak'" style="margin-left: 65vw;">
+            Wie funktioniert ein Tokamak?</pagebutton>
+    <pagebutton onclick="location.href='reactors/vergleich'" style="margin-left: 65vw; margin-top: 6vw;">Der Vergleich von Stellarator und Tokamak</pagebutton>
 </body>
 
 </html>
@@ -74,3 +77,4 @@
         background-color: transparent;
     }
 </style>
+<script src="{{url_for('static', filename='scripts/index.js')}}"></script>
