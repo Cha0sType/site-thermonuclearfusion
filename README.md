@@ -1,5 +1,7 @@
 # site-corefusionreactor
 Live share link (temporary):
+https://prod.liveshare.vsengsaas.visualstudio.com/join?AC47E9AEAAEBE48E7FBCC54D25494CCD7BE1
+
 Other things to share:
 
 
@@ -19,7 +21,7 @@ Fertig!
 
 List of software we used:
 Python 3
-Flask (Python modul)
+Flask (Python module)
 HTML5
 CSS
 Java Script
