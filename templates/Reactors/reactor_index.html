@@ -1,36 +1,34 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{url_for('static', filename='iter_index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/iter_index.css')}}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
     <title>Reactor Home</title>
 </head>
+
 <body>
     {{ header|safe }}
-<p>
-    
-    <h1>Tokamak und Stellarator: Die Reaktoren der Kernfusion</h1>
-    Bei der Kernfusion konzetriert man sich der Zeit auf zwei Methoden, der Tokamak-Methode und der Stellarator-Methode. Diese beiden Methoden und ihr wesentlicher Unterschied werden hier erklärt.
-</p>
-    
+    <p>
+
+
+        Bei der Kernfusion konzetriert man sich der Zeit auf zwei Methoden,<br> der Tokamak-Methode und der
+        Stellarator-Methode.<br>
+        Diese beiden Methoden und ihr wesentlicher Unterschied werden hier erklärt.
+    </p>
+
+    <pagebutton onclick="location.href='reactors/stellarator'" style="margin-left: 65vw; margin-top: -6vw;">
+        Wie funktioniert ein Stellarator?</pagebutton>
+<br><br><br><br><br><br>
+        <pagebutton onclick="location.href='reactors/tokamak'" style="margin-left: 65vw; margin-top: -6vw;">
+            Wie funktioniert ein Tokamak?</pagebutton>
+
 </body>
+
 </html>
 <style>
-
-html {
-    background: #F2F2F2;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #707070;}
-
-h1 {
-font-size: 300%;
-}
-
-
-
-
-
-.dropbtn {
+    .dropbtn {
         background-color: transparent;
         color: white;
         padding: 16px;
@@ -75,7 +73,4 @@ font-size: 300%;
     .dropdown:hover .dropbtn {
         background-color: transparent;
     }
-
-
-
 </style>

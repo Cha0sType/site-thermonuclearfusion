@@ -1,15 +1,25 @@
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
-    
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+    <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
+
     <title>Tokamak</title>
 </head>
+
 <body>
     {{ header|safe }}
-    <h1>Der Tokamak-Reaktor</h1>
-    <p>Der Tokamak ist ein ringförmiger Fusionsreaktor. Er beruht auf der Methode des magnetischen Plasmaeinschlusses. Dabei besteht das Plasma aus Wasserstoffisotopen, dieses Plasma wird durch ein Magnetfeld zusammen gehalten, welches unteranderem durch Strom, der durch das Plasma fließt zusammen gehalten wird. Derzeit beruhen die leistungsstärksten Reaktoren auf dem Tokamak-Prinzip. 
-        Die Idee zum Tokamak entstand 1949 und kam vom russischen Wissenschaftler Oleg Alexandrowitsch Lawrentjew. Später wurde sie von Andrej Sacharow und Igor Tamm weiterentwickelt. Als erster Tokamak gilt der 1962 gebaute, russische T3.
-        </p>
-        <img src="https://en.wikipedia.org/wiki/Tokamak#/media/File:2017_TOCAMAC_Fusion_Chamber_N0689.jpg" alt="Hier ist ein Bild verloren gegangen...">
+    
+    <p>Der Tokamak ist ein ringförmiger Fusionsreaktor. Er beruht auf der Methode des magnetischen Plasmaeinschlusses.
+        Dabei besteht das Plasma aus Wasserstoffisotopen, dieses Plasma wird durch ein Magnetfeld zusammen gehalten,
+        welches unteranderem durch Strom, der durch das Plasma fließt zusammen gehalten wird.<br> <br> Derzeit beruhen die
+        leistungsstärksten Reaktoren auf dem Tokamak-Prinzip.
+        Die Idee zum Tokamak entstand 1949 und kam vom russischen Wissenschaftler Oleg Alexandrowitsch Lawrentjew.
+        Später wurde sie von Andrej Sacharow und Igor Tamm weiterentwickelt. Als erster Tokamak gilt der 1962 gebaute,
+        russische T3.
+    </p><img src="{{url_for('static', filename='tokamak.jpg')}}"
+        alt="Hier ist ein Bild verloren gegangen...">
 </body>
+
 </html>
