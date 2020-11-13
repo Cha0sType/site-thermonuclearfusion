@@ -24,4 +24,5 @@ Python 3
 Flask (Python module)
 HTML5
 CSS
-Java Script
+JavaScript
+jQuery
