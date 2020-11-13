@@ -19,7 +19,7 @@ localhost:1234
 Fertig!
 
 
-List of software we used:
+List of software we used:\n
 Python 3
 Flask (Python module)
 HTML5
