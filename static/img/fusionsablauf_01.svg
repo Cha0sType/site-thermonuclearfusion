@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="250" height="295" viewBox="0 0 66.145832 78.052086" version="1.1" id="svg158">
+  <defs id="defs152">
+    <radialGradient id="neutron_6_-0" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(0.36388606,0,0,-0.36388606,111.67554,48.80107)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#AFAFAF" id="stop4-0"/>
+      <stop offset="1" style="stop-color:#565656" id="stop6-9"/>
+    </radialGradient>
+    <radialGradient id="proton_4_-5" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(0.36388605,0,0,-0.36388605,111.14625,-7.8328021)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#FFD9BA" id="stop10-2"/>
+      <stop offset="1" style="stop-color:#ff3f3f" id="stop12-0"/>
+    </radialGradient>
+    <radialGradient id="neutron_7_-5" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(0.36388605,0,0,-0.36388605,107.44122,-4.1277805)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#AFAFAF" id="stop16-8"/>
+      <stop offset="1" style="stop-color:#565656" id="stop18-6"/>
+    </radialGradient>
+    <radialGradient id="neutron_8_-7" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(0.36388605,0,0,-0.36388605,141.31571,-3.5984917)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#AFAFAF" id="stop24-9"/>
+      <stop offset="1" style="stop-color:#565656" id="stop26-4"/>
+    </radialGradient>
+    <radialGradient id="proton_5_-3" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(0.36388605,0,0,-0.36388605,139.19855,-8.8913797)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#FFD9BA" id="stop30-3"/>
+      <stop offset="1" style="stop-color:#ff3f3f" id="stop32-8"/>
+    </radialGradient>
+    <radialGradient id="neutron_9_-7" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(0.36388605,0,0,-0.36388605,135.49353,-5.1863581)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#AFAFAF" id="stop36-4"/>
+      <stop offset="1" style="stop-color:#565656" id="stop38-3"/>
+    </radialGradient>
+    <radialGradient id="proton_6_-5" cx="-613.93158" cy="67.028099" r="12.6316" gradientTransform="matrix(0.36388605,0,0,-0.36388605,273.3071,73.148353)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#FFD9BA" id="stop44-6"/>
+      <stop offset="1" style="stop-color:#ff3f3f" id="stop46-4"/>
+    </radialGradient>
+    <radialGradient id="neutron_10_-4" cx="-613.40588" cy="51.391701" r="12.6316" gradientTransform="matrix(0.36388605,0,0,-0.36388605,269.60208,63.091897)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#AFAFAF" id="stop51-8"/>
+      <stop offset="1" style="stop-color:#565656" id="stop53-1"/>
+    </radialGradient>
+    <radialGradient id="neutron_11_-9" cx="-661.38623" cy="75.391701" r="12.6316" gradientTransform="matrix(0.36388605,0,0,-0.36388605,288.45799,81.616949)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#AFAFAF" id="stop58-0"/>
+      <stop offset="1" style="stop-color:#565656" id="stop60-7"/>
+    </radialGradient>
+    <radialGradient id="proton_7_-5" cx="-569.56799" cy="77.937103" r="12.6316" gradientTransform="matrix(0.36388605,0,0,-0.36388605,250.68001,78.441241)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#FFD9BA" id="stop65-6"/>
+      <stop offset="1" style="stop-color:#ff3f3f" id="stop67-8"/>
+    </radialGradient>
+    <radialGradient id="SVGID_1_-5" cx="-149.4801" cy="-292.409" r="42.0173" gradientTransform="matrix(0.3130214,-0.01601225,-0.01467791,-0.28692746,70.315109,-56.022721)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#FFFF00" id="stop105-3"/>
+      <stop offset="1" style="stop-color:#FFA400" id="stop107-7"/>
+    </radialGradient>
+    <radialGradient id="SVGID_2_-6" cx="-201.7878" cy="-271.5773" r="18.2843" gradientTransform="matrix(1.2347,-0.06316008,-0.05707934,-1.1158,354.4024,-205.1697)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#FFFFFF" id="stop112-4"/>
+      <stop offset="1" style="stop-color:#FFFEBF" id="stop114-2"/>
+    </radialGradient>
+    <radialGradient id="radialGradient221" cx="-149.4801" cy="-292.409" r="42.0173" gradientTransform="matrix(1.1828,-0.06050476,-0.05546277,-1.0842,278.1465,-211.3167)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#FFFF00" id="stop217"/>
+      <stop offset="1" style="stop-color:#FFA400" id="stop219"/>
+    </radialGradient>
+    <radialGradient id="radialGradient147" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(1.375,0,0,-1.375,546.4333,-13.2236)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#AFAFAF" id="stop143"/>
+      <stop offset="1" style="stop-color:#565656" id="stop145"/>
+    </radialGradient>
+    <radialGradient id="radialGradient154" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(1.375,0,0,-1.375,538.4333,-33.2236)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#FFD9BA" id="stop150"/>
+      <stop offset="1" style="stop-color:#ff3f3f" id="stop152"/>
+    </radialGradient>
+    <radialGradient id="radialGradient161" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(1.375,0,0,-1.375,524.4333,-19.2236)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#AFAFAF" id="stop157"/>
+      <stop offset="1" style="stop-color:#565656" id="stop159"/>
+    </radialGradient>
+    <radialGradient id="radialGradient132" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(1.375,0,0,-1.375,432.4333,-29.2236)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#FFD9BA" id="stop128"/>
+      <stop offset="1" style="stop-color:#ff3f3f" id="stop130"/>
+    </radialGradient>
+    <radialGradient id="radialGradient139" cx="-266.29529" cy="-43.5173" r="12.6316" gradientTransform="matrix(1.375,0,0,-1.375,418.4333,-15.2236)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#AFAFAF" id="stop135"/>
+      <stop offset="1" style="stop-color:#565656" id="stop137"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.375,0,0,-1.375,848.6833,133.7763)" r="12.6316" cy="77.937103" cx="-569.56799" id="radialGradient193">
+      <stop id="stop189" style="stop-color:#FFD9BA" offset="0"/>
+      <stop id="stop191" style="stop-color:#ff3f3f" offset="1"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.375,0,0,-1.375,958.4333,146.7762)" r="12.6316" cy="75.391701" cx="-661.38623" id="radialGradient185">
+      <stop id="stop181" style="stop-color:#AFAFAF" offset="0"/>
+      <stop id="stop183" style="stop-color:#565656" offset="1"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.375,0,0,-1.375,902.1833,111.7764)" r="12.6316" cy="51.391701" cx="-613.40588" id="radialGradient177">
+      <stop id="stop173" style="stop-color:#AFAFAF" offset="0"/>
+      <stop id="stop175" style="stop-color:#565656" offset="1"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.375,0,0,-1.375,916.1833,123.7763)" r="12.6316" cy="67.028099" cx="-613.93158" id="radialGradient169">
+      <stop id="stop165" style="stop-color:#FFD9BA" offset="0"/>
+      <stop id="stop167" style="stop-color:#ff3f3f" offset="1"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.2347,-0.06316008,-0.05707934,-1.1158,354.4024,-205.1697)" r="18.2843" cy="-271.5773" cx="-201.7878" id="radialGradient228">
+      <stop id="stop224" style="stop-color:#FFFFFF" offset="0"/>
+      <stop id="stop226" style="stop-color:#FFFEBF" offset="1"/>
+    </radialGradient>
+  </defs>
+  <metadata id="metadata155">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g id="g295">
+    <path style="fill:url(#proton_4_-5);stroke:#000000;stroke-width:0.26464441;stroke-miterlimit:10" d="m 20.285011,9.0577562 c 0,2.4082638 -1.958368,4.3666328 -4.366632,4.3666328 -2.408264,0 -4.366633,-1.958369 -4.366633,-4.3666328 0,-2.408264 1.958369,-4.3666326 4.366633,-4.3666326 2.408264,0 4.366632,1.9583686 4.366632,4.3666326 z" class="st1" id="proton"/>
+    <path style="fill:url(#neutron_7_-5);stroke:#000000;stroke-width:0.26464441;stroke-miterlimit:10" d="m 16.57999,12.762778 c 0,2.408264 -1.958369,4.366632 -4.366633,4.366632 -2.4082639,0 -4.3666325,-1.958368 -4.3666325,-4.366632 0,-2.408264 1.9583686,-4.3666328 4.3666325,-4.3666328 2.408264,0 4.366633,1.9583688 4.366633,4.3666328 z" class="st2" id="neutron"/>
+  </g>
+  <g id="g300">
+    <path style="fill:url(#neutron_8_-7);stroke:#000000;stroke-width:0.26464441;stroke-miterlimit:10" d="m 50.454473,13.292067 c 0,2.408264 -1.958369,4.366632 -4.366633,4.366632 -2.408264,0 -4.366632,-1.958368 -4.366632,-4.366632 0,-2.408264 1.958368,-4.366633 4.366632,-4.366633 2.408264,0 4.366633,1.958369 4.366633,4.366633 z" class="st3" id="neutron_1_"/>
+    <path style="fill:url(#proton_5_-3);stroke:#000000;stroke-width:0.26464441;stroke-miterlimit:10" d="m 48.337318,7.9991786 c 0,2.4082644 -1.958369,4.3666324 -4.366633,4.3666324 -2.408264,0 -4.366632,-1.958368 -4.366632,-4.3666324 0,-2.408264 1.958368,-4.3666326 4.366632,-4.3666326 2.408264,0 4.366633,1.9583686 4.366633,4.3666326 z" class="st4" id="proton_1_"/>
+    <path style="fill:url(#neutron_9_-7);stroke:#000000;stroke-width:0.26464441;stroke-miterlimit:10" d="m 44.632296,11.7042 c 0,2.408264 -1.958368,4.366633 -4.366632,4.366633 -2.408265,0 -4.366633,-1.958369 -4.366633,-4.366633 0,-2.4082638 1.958368,-4.3666324 4.366633,-4.3666324 2.408264,0 4.366632,1.9583686 4.366632,4.3666324 z" class="st5" id="neutron_2_"/>
+  </g>
+  <svg:switch style="font-size:5.2916667px;font-family:'Liberation Sans';stroke-width:0.26464441;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><svg:text y="8.5475149" x="51.123707" style="font-size:5.2916667px;font-family:'Liberation Sans';stroke-width:0.26464441;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="text83-uk" class="st10 st11" systemLanguage="uk"><svg:tspan id="trsvg5-uk">H</svg:tspan></svg:text><svg:text y="8.5475149" x="51.123707" style="font-size:5.2916667px;font-family:'Liberation Sans';stroke-width:0.26464441;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="text83" class="st10 st11"><tspan id="trsvg5">H</tspan></svg:text></svg:switch>
+  <svg:switch style="font-size:3.17573285px;font-family:'Liberation Sans';stroke-width:0.26464441"><svg:text y="6.5717854" x="49.289562" style="font-size:3.17573285px;font-family:'Liberation Sans';stroke-width:0.26464441" id="text85-uk" class="st10 st12" systemLanguage="uk"><svg:tspan id="trsvg6-uk">3</svg:tspan></svg:text><svg:text y="6.5717854" x="49.289562" style="font-size:3.17573285px;font-family:'Liberation Sans';stroke-width:0.26464441" id="text85" class="st10 st12"><tspan id="trsvg6">3</tspan></svg:text></svg:switch>
+  <svg:switch style="font-size:3.17500002px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:0.10585776;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><svg:text y="6.5717854" x="49.289562" style="font-size:3.17500002px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:0.10585776;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="text87-uk" class="st13 st10 st12" systemLanguage="uk"><svg:tspan id="trsvg7-uk">3</svg:tspan></svg:text><svg:text y="6.5717854" x="49.289562" style="font-size:3.17500002px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:0.10585776;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="text87" class="st13 st10 st12"><tspan id="trsvg7">3</tspan></svg:text></svg:switch>
+  <svg:switch style="font-size:5.2916667px;font-family:'Liberation Sans';stroke-width:0.26464441;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><svg:text y="6.8918991" x="6.9841695" style="font-size:5.2916667px;font-family:'Liberation Sans';stroke-width:0.26464441;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="text90-uk" class="st10 st11" systemLanguage="uk"><svg:tspan id="trsvg8-uk">H</svg:tspan></svg:text><svg:text y="6.8918991" x="6.9841695" style="font-size:5.2916667px;font-family:'Liberation Sans';stroke-width:0.26464441;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="text90" class="st10 st11"><tspan id="trsvg8">H</tspan></svg:text></svg:switch>
+  <svg:switch style="font-size:3.17573285px;font-family:'Liberation Sans';stroke-width:0.26464441"><svg:text y="4.9161963" x="5.1500254" style="font-size:3.17573285px;font-family:'Liberation Sans';stroke-width:0.26464441" id="text92-uk" class="st10 st12" systemLanguage="uk"><svg:tspan id="trsvg9-uk">2</svg:tspan></svg:text><svg:text y="4.9161963" x="5.1500254" style="font-size:3.17573285px;font-family:'Liberation Sans';stroke-width:0.26464441" id="text92" class="st10 st12"><tspan id="trsvg9">2</tspan></svg:text></svg:switch>
+  <svg:switch style="font-size:3.17500002px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:0.10585776;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><svg:text y="4.9161963" x="5.1500254" style="font-size:3.17500002px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:0.10585776;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="text94-uk" class="st13 st10 st12" systemLanguage="uk"><svg:tspan id="trsvg10-uk">2</svg:tspan></svg:text><svg:text y="4.9161963" x="5.1500254" style="font-size:3.17500002px;font-family:'Liberation Sans';fill:none;stroke:#000000;stroke-width:0.10585776;-inkscape-font-specification:'Liberation Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="text94" class="st13 st10 st12"><tspan id="trsvg10">2</tspan></svg:text></svg:switch>
+  <g id="g312">
+    <path d="m 40.927275,16.811837 -5.980964,6.007428 C 34.734596,22.528156 34.575809,22.210583 34.52288,21.813616 l -1.217364,2.646444 -0.02646,0.02647 v 0 l -0.317573,0.688075 0.688076,-0.317573 v 0 l 2.672908,-1.243829 c -0.370502,-0.05293 -0.71454,-0.211715 -0.979184,-0.449895 l 6.007428,-6.007428 z" id="arr2" style="stroke-width:0.26464441"/>
+    <path d="m 16.791705,16.044368 -0.423431,0.317574 4.234311,5.795712 c -0.317574,0.185251 -0.661611,0.264644 -1.058578,0.264644 l 2.434729,1.614331 0.02646,0.02646 v 0 l 0.635147,0.396966 -0.211716,-0.71454 -0.793933,-2.831695 c -0.105858,0.370503 -0.344038,0.661611 -0.608682,0.926256 z" id="arr1" style="stroke-width:0.26464441"/>
+  </g>
+  <g id="g316">
+    <path style="fill:url(#SVGID_1_-5);stroke:#f8f053;stroke-width:0.79393321;stroke-linecap:round;stroke-miterlimit:6;stroke-opacity:0.52780002" id="path110" d="m 16.447668,27.979831 7.198327,-1.931904 -0.95272,-7.118935 6.007428,5.742784 4.604813,-6.61611 -1.111507,8.865587 8.442157,-0.423431 -7.965797,4.260775 5.372282,6.536717 -7.066006,-3.413913 -2.090691,8.256905 -2.249477,-7.410043 -8.627407,2.964017 4.842992,-6.13975 z" class="st14"/>
+    <polygon class="st15" points="129.8,112.1 143.7,132.1 124.6,119.3 120,144 114.4,119.3 96.3,132.9 108.6,113 86.6,107.4 111.2,105 103.6,86.3 121.4,103 132.7,83.3 127.4,105.1 151,103.6 " id="polygon117" style="fill:url(#SVGID_2_-6)" transform="matrix(0.2646444,0,0,0.2646444,-3.2948047,-0.09894)"/>
+  </g>
+</svg>
