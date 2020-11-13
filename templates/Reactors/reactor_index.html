@@ -2,20 +2,79 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{url_for('static', filename='iter_index.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/iter_index.css')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
     <title>Reactor Home</title>
 </head>
 
 <body>
+
     {{ header|safe }}
+    <h1>Die Reaktoren</h1>
     <p>
 
-    <h1>Tokamak und Stellarator: Die Reaktoren der Kernfusion</h1>
-    Bei der Kernfusion konzetriert man sich der Zeit auf zwei Methoden, der Tokamak-Methode und der Stellarator-Methode.
-    Diese beiden Methoden und ihr wesentlicher Unterschied werden hier erklärt.
-    </p>
 
+        Bei der Kernfusion konzetriert man sich der Zeit auf zwei Methoden,<br> der Tokamak-Methode und der
+        Stellarator-Methode.<br>
+        Diese beiden Methoden und ihr wesentlicher Unterschied werden hier erklärt.
+    </p>
+    {{ icon|safe }}
+    <pagebutton onclick="location.href='reactors/stellarator'" style="margin-left: 65vw; margin-top: -6vw;">
+        Wie funktioniert ein Stellarator?</pagebutton>
+
+    <pagebutton onclick="location.href='reactors/tokamak'" style="margin-left: 65vw;">
+            Wie funktioniert ein Tokamak?</pagebutton>
+    <pagebutton onclick="location.href='reactors/vergleich'" style="margin-left: 65vw; margin-top: 6vw;">Der Vergleich von Stellarator und Tokamak</pagebutton>
 </body>
 
 </html>
+<style>
+    .dropbtn {
+        background-color: transparent;
+        color: white;
+        padding: 16px;
+        font-size: px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    .dropdown:hover .dropbtn {
+        background-color: transparent;
+    }
+</style>
+<script src="{{url_for('static', filename='scripts/index.js')}}"></script>

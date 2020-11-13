@@ -1,10 +1,70 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="de">
 <head>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+    <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
+
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="basics_index.css">
-    <title>Document</title>
+    <title>Was ist Kernfusion?</title>
+
 </head>
 <body>
+
+    {{ header|safe }}
+
+    <h1>Was ist Kernfusion?</h1>
+
+    <p>
+        Um zu verstehen, wie Kernfusionsreaktoren funktioneren,<br>
+        sollten wir erst einmal verstehen, was Kernfusion ist<br>
+        Kernfusion ist gewissermaßen das Gegenteil von <a href="https://physikunterricht-online.de/jahrgang-12/kernspaltung/" target="_blank">Kernspaltung</a>, doch<br>
+        deutlich ungefährlicher. Bei der Kernspaltung wird ein<br>
+        schwerer Atomkern (also ein Atomkern mit vielen Protonen und Neutronen)<br>
+        mit einem weiteren Neutron beschossen, was verursacht, dass sich<br>
+        der große Kern in zwei kleine spaltet (für mehr Informationen<br>
+        über Kernspaltung, einfach auf den ersten Link klicken). Dies ist<br>
+        der Vorgang, der die Stromproduktion durch Atomkraftwerke ermöglicht,<br>
+        welche leider radioaktive Strahlung abgeben. 
+    </p>
+    <img id="img01" src="{{url_for('static', filename='img/basics_index_01.png')}}" alt="Was sind Kernfusionsreaktoren">
+    <p style="text-align: end;">
+        Kernfusion funktioniert ganz anders. Zwei leichtere Kerne<br>
+        verschmelzen (fusionieren) zu einem größeren, schwereren Kern.<br>
+        Dieser Vorgang kann in der Natur beispielsweise bei der <a href="https://www.lernhelfer.de/schuelerlexikon/physik/artikel/kernfusion" target="_blank">Sonne</a><br>
+        beobachtet werden. In ihr wird Wasserstoff zu Helium umgewandelt,<br>
+        was wichtig für alles Leben auf der Erde ist, da die Energie, die<br>
+        dabei frei wird, zum Teil die Wärmeenergie ist, die auf der Erde auftrifft.<br>
+        Bei Kernfusionsreaktoren hört man häufig die Begriffe Deuterium<br>
+        und Tritium, doch was hat es mit ihnen auf sich?
+    </p>
+    <img id="img02" src="{{url_for('static', filename='img/basics_index_02.svg')}}" alt="Was sind Kernfusionsreaktoren">
+    
+    <pagebutton onclick="location.href='basics'" style="margin-left: 75vw; margin-top: -2.5vw; min-width: 11vw;">
+        Fusionsablauf
+    </pagebutton>
+    <br><br><br>
     
 </body>
 </html>
+<style>
+
+    img {
+        position: absolute;
+        width: 18vw;
+        height: auto;
+    }
+
+    #img01 {
+        opacity: 0.85; /* The image is black and since we need it grey, we can just set the opacity down */
+        margin-top: -27vw;
+        margin-left: 65vw;
+    }
+
+    #img02 {
+        margin-top: -22.5vw;
+        margin-left: 15vw;
+    }
+
+</style>
+<script src="{{url_for('static', filename='scripts/index.js')}}"></script>
