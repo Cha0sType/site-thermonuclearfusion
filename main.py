@@ -19,7 +19,11 @@ def index():
 def iter():
     return render_template('Iter/iter_index.html', header=header.replace('--name--', headername.replace('---', "ITER - Ein europäisches Forschungsprojekt")))
 
-@app.route('/basics') # Creating basics sub page and rendering specified template
+@app.route('/iter/science') # Creating iter sub page and rendering specified template
+def science():
+    return render_template('Iter/iter_subpage1.html', header=header)
+
+@app.route('/basics') #Creating basics sub page and rendering specified template
 def basics():
     return render_template('Basics/basics_index.html', header=header.replace('--name--', headername.replace('---', "Physik der Kernfusion")))
 @app.route('/fusionsablauf')
