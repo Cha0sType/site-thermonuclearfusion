@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+    <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
+
+    <meta charset="UTF-8">
+    <title>Wie läuft eine Fusion ab?</title>
+
+</head>
+<body>
+
+    {{ header|safe }}
+
+    <h1>Deuterium und Tritium</h1>
+
+    <p>
+        Deuterium (&sup2H) und das leicht radioaktive Tritium (&sup3H),<br>
+        welches eine Halbwertzeit von gerade einmal 12,3 Jahren hat,<br>
+        sind zwei Wasserstoffisotope. Bei der Kernfusion verschmelzen<br>
+        ein Deuterium- und ein Tritiumatom zu Helium-4 und es wird ein<br>
+        Proton frei. Wie kann man sich dies vorstellen?
+    </p>
+    <img id="img01" src="{{url_for('static', filename='img/fusionsablauf_01.svg')}}" alt="Kernfusion durch Deuterium und Tritium">
+    <p style="text-align: end;">
+        Deuterium hat jeweils ein Proton (rot) und ein Neutron (weiß),<br>
+        Tritium ein Proton und zwei Neutronen. Wenn die beiden Stoffe nun<br>
+        miteinander fusionieren, entsteht Helium-4, welches zwei Protonen<br>
+        und zwei Neutronen hat (deshalb auch die 4). Übrig bleibt ein Neutron.<br>
+        Doch was hat dies nun mit Energiegewinnung zu tun? Wie bereits erwähnt<br>
+        ist ein Neutron nicht in die Masse des Heliums eingegangen. Gemäß<br>
+        Einsteins Masseäquivalenzformel (E=mc2, also die Energie berechnet<br>
+        sich aus der Masse mal die Lichtgeschwindigkeit zum Quadrat) wird dieses<br>
+        als Energie freigesetzt, und zwar eine viel höhere als die, die man der<br>
+        Kernspaltung gewinnt (1g Brennstoff bedeutet 90 000 kWh Energie,<br>
+        also etwa so viel wie elf Tonnen Kohle).
+    </p>
+    <img id="img02" src="{{url_for('static', filename='img/fusionsablauf_02.svg')}}" alt="Kernfusion durch Deuterium und Tritium">
+    
+    <pagebutton onclick="location.href='fusionsablauf'" style="margin-left: 67vw; margin-top: -2.5vw; min-width: 11vw;">
+        Wann kommt es zur Fusion?
+    </pagebutton>
+    <br><br><br>
+    
+</body>
+</html>
+<style>
+
+    img {
+        position: absolute;
+    }
+
+    #img01 {
+        width: 25vw;
+        height: auto;
+        margin-top: -18vw;
+        margin-left: 58vw;
+    }
+
+    #img02 {
+        width: 50vw;
+        height: auto;
+        margin-top: -25vw;
+    }
+
+</style>
+<script src="{{url_for('static', filename='scripts/index.js')}}"></script>

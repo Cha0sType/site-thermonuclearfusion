@@ -1,31 +1,44 @@
 <!DOCTYPE html>
+
 <html lang="de">
     <head>
 
-        <link rel="stylesheet"
-         href="{{url_for('static', filename='index.css')}}">
-        <!--link rel="stylesheet" href="index.css"-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Google's Material Design Icon Font, that alllows us to use Google-Icons on our Website -->
+        <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+        <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
 
         <meta charset="UTF-8">
         <title>Kernfusionsreaktoren - Home</title>
 
-
     </head>
     <body>
 
-        <p>
         {{ header|safe }}
+        
+        <h1>Willkommen!</h1>
+
+        <p>
+            Herzlich Willkommen auf unserer Website zum Thema Kernfusionsreaktoren.<br>
+            Bei uns wirst du lernen, was Kernfusion ist, wie sie funktioniert und<br>
+            warum sie so wichtig für die Zukunft der Menschheit sein könnte. Außerdem<br>
+            erfährst du über verschiede Kernfusionsreaktortypen und wie diese arbeiten.<br>
+            Zudem lernst du ITER kennen, ein voranschreitendes Projekt zur Verwirklichung<br> des Traums eines
+            jeden Physikers. <br> Ein paar tolle Extras haben wir auch eingebaut =)<br>
+            Bist du bereit? Dann los!
         </p>
 
-        <h1>Willkommen!</h1>
-        <!--div>
-            <a href="basics"><button class="topbutton">Basics</button></a>
-            <a href="reactors">Reactor Types</a>
-            <a href="iter">ITER</a>
-        </div> -->
+        {{ icon|safe }}
 
+        <pagebutton onclick="location.href='basics'" style="margin-left: 65vw; margin-top: -11.5vw;">
+            Was ist ein Kernfusionsreaktor?
+        </pagebutton>
+        <pagebutton onclick="location.href='reactors'" style="margin-left: 65vw; margin-top: -5.5vw;">
+            Tokamak und Stellaratoren
+        </pagebutton>
+        <pagebutton onclick="location.href='iter'" style="margin-left: 65vw; margin-top: 0.5;">
+            ITER - Ein europäisches Projekt
+        </pagebutton>
 
     </body>
+
 </html>
+<script src="{{url_for('static', filename='scripts/index.js')}}"></script>

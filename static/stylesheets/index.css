@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #F2F2F2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Some similar looking font-families to make sure, the user sees the UI as we wish */
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: #c7c7c7;
+  }
+  
+  ::selection {
+    background: #c7c7c7;
+  }
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    /* This is for vertically centering the header content */
+    padding: 1vw;
+
+    box-shadow: 0 0.0625vw 0.0625vw rgba(0,0,0,0.12), 
+              0 0.125vw 0.125vw rgba(0,0,0,0.12), 
+              0 0.25vw 0.25vw rgba(0,0,0,0.12), 
+              0 0.5vw 0.5vw rgba(0,0,0,0.12);
+
+    background: #29293B;
+}
+
+h1 {
+    margin-top: 4.1vw;
+    margin-left: 7.1vw;
+    font-size: 5.1vw;
+    font-weight: normal;
+    color: #707070;
+}
+
+p {
+    z-index: 0;
+    margin-top: 4.1vw;
+    margin-left: 7.1vw;
+    margin-bottom: 4.1vw;
+    margin-right: 7.1vw;
+    font-size: 1.51vw;
+    color: #707070;
+}
+
+a {
+    color: #666666;
+}
+
+svg {
+    position: absolute;
+    margin-top: -30.1vw;
+    margin-left: 67.1vw;
+    width: 10vw;
+    height: auto;
+}
+
+pagebutton {
+    position: absolute;
+    display: block;
+    min-width: 20vw;
+    height: 5vw;
+
+    line-height: 5vw;
+    vertical-align: middle;
+    padding-left: 3.5vw;
+    padding-right: 2vw;
+    font-size: 1.51vw;
+
+    border-radius: 50vw;
+
+    background: none;
+    color: #707070;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: pointer;
+    transition: background 400ms, color 400ms, box-shadow 400ms;
+}
+
+pagebutton:hover {
+    background: white;
+    color: #4d4d4d;
+    box-shadow: 0vw 0.12vw 0.1vw 0.1vw rgba(0,0,0,0.12);
+}
