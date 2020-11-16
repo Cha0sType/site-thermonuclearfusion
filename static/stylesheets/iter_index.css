@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.top {
+    background-color: #29293B;
+    width: 100%;
+    height: 3vw;
+    min-height: 80px;
+}
+
+.header-h1 {
+    color: white;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: auto auto;
+    padding: 2vw;
+}
+
+main div {
+    color: gray;
+    font-size: 35px;
+}
+
+main img {
+    width: 100%;;
+    height: auto;
+    border-radius: 15px;
+}
+
+footer {
+    display: grid;
+    width: 100%;
+    height: 3vw;
+    min-height: 80px;
+    background-color: lightgray;
+    text-align: center;
+}
