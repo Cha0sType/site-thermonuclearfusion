@@ -42,3 +42,13 @@ footer {
     background-color: lightgray;
     text-align: center;
 }
+
+footer button {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+footer img {
+    height: 1.5vw;
+    width: auto;
+}
