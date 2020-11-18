@@ -10,6 +10,7 @@
 
 <body>
     {{ header|safe }}
+    <h1>Wo liegt der Unterschied?</h1>
     
     <p>Wir kennen Grundsätzlich zwei Prinzipe zur Kernfusion: Das Tokamak-Prinzip und das Stellarator-Prinzip, aber
         worin unterscheiden sich diese?
@@ -27,24 +28,25 @@
         aufweist. Ein Nachteil des Stellarators ist hierbei, dass man das Magnetfeld im Nachhinein nur sehr
         eingeschränkt verstellen kann, was ein gut vorstellbares Risiko birgt.
     </p>
+<h2>In übersichtlich:</h2>
 
     <table class="center">
         <tr>
-            <td>
+            <th>
                 Reaktoren
-            </td>
-            <td>
+            </th>
+            <th>
                 Prinzip der Reaktoren
-            </td>
-            <td>
+            </th>
+            <th>
                 Genutzte Isotope
-            </td>
-            <td>
+            </th>
+            <th>
                 Problemlösung um die Teilchen auf den Leiterbahnen zu halten
-            </td>
-            <td>
+            </th>
+            <th>
                 Erfinder
-            </td>
+            </th>
         </tr>
         <tr>
             <td>
@@ -82,20 +84,35 @@
         </tr>
 
     </table>
+    <br>
 
 
 </body>
 
 </html>
 <style>
-    h1 {
+    
+    
+    .center, th, td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        margin-left: 7.1vw;
+        margin-top: 4.1vw;
+        margin-right: 7.1vw;
+        color:  #707070;
         text-align: center;
-        font-family: sans-serif;
-    }
-    table.center, th, td {
-        margin-left: auto;
-        margin-right: auto;
-        border: 3px solid black;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+   }
+   th {
+
+   }
+    h2 {
+        margin-top: 4.1vw;
+    margin-left: 7.1vw;
+    font-size: 3.1vw;
+    font-weight: normal;
+    color: #707070;
     }
     
 </style>
