@@ -1,73 +1,36 @@
-<html lang="en">
-
+﻿<html>
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
-    <title>Iter - Forschungsprojekt in Europa</title>
+    <link href="{{url_for('static', filename='stylesheets/iter_index.css')}}" rel="stylesheet" />
+    <meta charset="utf-8"/>
+    <title>ITER - Ein Europäisches Forschungsprojekt</title>
 </head>
-
 <body>
-    {{ header|safe }}
-    <img src="{{url_for('static', filename='img/iter-view.jpg')}}" alt="Something went wrong .-." style="scale: 30%; position: absolute; float: left;">
-    <h1>Was ist ITER?</h1>
-    
-    <p style="color: grey;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. t <br> Unde quos deleniti dolorem voluptas provident
-        laborum, <br>
-        est corrupti numquam atque dolorum ratione magnam <br> rem, quas ipsam autem sed. Molestiae, ab.
-    </p>
-    
+    <header>
+        <div class="top">
+            <h1 class="header-h1">ITER - Ein Europäisches Forschunngsprojekt</h1>
+        </div>
+    </header>
+    <main class="grid">
+        <div>
+            ITER ist ein Forschungsreaktor im Süden Frankreichs. Momentan befindet er sich noch im Bau, genau wie dieser Text :D
+        </div>
+        <img src="{{url_for('static', filename='img/iter-view.jpg')}}" alt="404 Image not found" />
+    </main>
+    <footer>
+        <div class="footline">
+            <button>
+                <img src="{{url_for('static', filename='icon.svg')}}" alt="404 Image not found" />
+            </button>
+            <button>
+                Credits
+            </button>
+            <button>
+                Impressum
+            </button>
+            <button onclick="location.href='https://github.com/Cha0sType/site-corefusionreactor'">
+                GitHub
+            </button>
+        </div>
+    </footer>
 </body>
-
 </html>
-<style>
-
-
-
-    .dropbtn {
-        background-color: transparent;
-        color: white;
-        padding: 16px;
-        font-size: px;
-        border: none;
-    }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-
-
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-
-    .dropdown-content a:hover {
-        background-color: #ddd;
-    }
-
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-
-    .dropdown:hover .dropbtn {
-        background-color: transparent;
-    }
-</style>
