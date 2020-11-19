@@ -43,72 +43,12 @@
     <pagebutton onclick="location.href='fusionsablauf'" style="margin-left: 75vw; margin-top: -2.5vw; min-width: 11vw;">
         Fusionsablauf
     </pagebutton>
-    <br><br><br>
-    <footer>
-        <section id="s1">
-            <h1>Impressum</h1>
-            <p>
-                Gymnasium Lohbrügge<br>
-                Binnenfeldredder 5,<br>
-                21031 Hamburg
-            </p>
-        </section>
-        <section id="s2">
-            <h1>Kontakt</h1>
-            <p>
-                Herr Bamberger<br>
-                herr.bam@berger.de<br>
-                +49 187 1234567
-            </p>
-        </section>
-        <section id="s3">
-            <h1>Quellen</h1>
-            <p>
-                <a href="https://physikunterricht-online.de/jahrgang-12/kernspaltung/" target="_blank">Kernspaltung</a><br>
-                <a href="https://physikunterricht-online.de/jahrgang-12/kernfusion/" target="_blank">Kernfusion (Allgemein)</a><br>
-                <a href="https://www.lernhelfer.de/schuelerlexikon/physik/artikel/kernfusion#" target="_blank">Kernfusion (Sonne)</a><br>
-            </p>
-        </section>
-    </footer>
-    
+    <div style="margin-top: 8.5vw;"></div>
+    {{ footer|safe }}
+
 </body>
 </html>
 <style>
-
-    footer {
-        background-color: #29293B;
-        height: 16vw;
-    }
-
-    footer h1 {
-        position: absolute;
-        margin-top: 2.5vw;
-        font-size: 2vw;
-        color: #999999;
-        font-weight: bolder;
-    }
-
-    footer p {
-        position: absolute;
-        margin-top: 6vw;
-        font-size: 1.5vw;
-    }
-
-    footer #s2 {
-        margin-left: 20vw;
-    }
-
-    footer #s3 {
-        margin-left: 40vw;
-    }
-
-    footer h1::-moz-selection { /* Code for Firefox */
-        background: red;
-    }
-  
-    footer h1::selection {
-        background: red;
-    }
 
     img {
         position: absolute;

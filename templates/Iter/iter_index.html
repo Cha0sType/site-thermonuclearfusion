@@ -1,36 +1,47 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html lang="de">
+
 <head>
-    <link href="{{url_for('static', filename='stylesheets/iter_index.css')}}" rel="stylesheet" />
-    <meta charset="utf-8"/>
-    <title>ITER - Ein Europäisches Forschungsprojekt</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+    <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/iter_index.css')}}">
+    <meta charset="UTF-8">
+    <title>ITER - Home</title>
 </head>
+
 <body>
-    <header>
-        <div class="top">
-            <h1 class="header-h1">ITER - Ein Europäisches Forschunngsprojekt</h1>
-        </div>
-    </header>
-    <main class="grid">
-        <div>
-            ITER ist ein Forschungsreaktor im Süden Frankreichs. Momentan befindet er sich noch im Bau, genau wie dieser Text :D
-        </div>
-        <img src="{{url_for('static', filename='img/iter-view.jpg')}}" alt="404 Image not found" />
-    </main>
-    <footer>
-        <div class="footline">
-            <button>
-                <img src="{{url_for('static', filename='icon.svg')}}" alt="404 Image not found" />
-            </button>
-            <button>
-                Credits
-            </button>
-            <button>
-                Impressum
-            </button>
-            <button onclick="location.href='https://github.com/Cha0sType/site-corefusionreactor'">
-                GitHub
-            </button>
-        </div>
-    </footer>
+
+    {{ header|safe }}
+    <h2>Was ist ITER?</h2>
+
+    <p>
+        ITER (Eng. International Thermonuclear Experimental Reactor) ist ein Versuchs- und Foschungsreaktor der im
+        Süden Frankreichs gebaut wird. Der Reaktor ist ein gemeinsames Projekt der EU Staaten (inklusive der Schweiz),
+        China, Japan, Korea, Russland und den USA. <br> Der entstehende Reaktor beruht auf dem <a href="/reactors/tokamak">Tokamak</a>-Prinzip.
+    </p>
+    <img src="{{url_for('static', filename='img/iter-view.jpg')}}" alt="404 Image not found">
+
 </body>
+
 </html>
+<script src="{{url_for('static', filename='scripts/index.js')}}">
+</script>
+<style>
+
+    p {
+        margin-top: 1vw;
+    }
+    h2 {
+        padding-top: 1.5vw;
+        padding-left: 7.1vw;
+        color: gray;
+        font-weight: normal;
+        font-size: 4.1vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    img {
+        height: 30vw;
+        padding-top: 1vw;
+        padding-left: 7.1vw;
+    }
+</style>

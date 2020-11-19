@@ -18,7 +18,12 @@
     <p>
         Deuterium (&sup2H) und das leicht radioaktive Tritium (&sup3H),<br>
         welches eine Halbwertzeit von gerade einmal 12,3 Jahren hat,<br>
-        sind zwei Wasserstoffisotope. Bei der Kernfusion verschmelzen<br>
+        sind zwei <infobox>
+            <u>Wasserstoffisotope</u>
+            <info style="position: absolute; padding: 2vw; background-color: #f7f7f7; box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.2);">
+                www
+            </info>
+        </infobox>. Bei der Kernfusion verschmelzen<br>
         ein Deuterium- und ein Tritiumatom zu Helium-4 und es wird ein<br>
         Proton frei. Wie kann man sich dies vorstellen?
     </p>
@@ -41,11 +46,20 @@
     <pagebutton onclick="location.href='fusionsablauf'" style="margin-left: 67vw; margin-top: -2.5vw; min-width: 11vw;">
         Wann kommt es zur Fusion?
     </pagebutton>
-    <br><br><br>
+    <div style="margin-top: 8.5vw;"></div>
+    {{ footer|safe }}
     
 </body>
 </html>
 <style>
+
+    info {
+        display: none;
+    }
+
+    infobox:hover info {
+        display: block;
+    }
 
     img {
         position: absolute;
