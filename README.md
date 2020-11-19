@@ -1,6 +1,6 @@
 # site-corefusionreactor
 Live share link (temporary):
-https://prod.liveshare.vsengsaas.visualstudio.com/join?AC47E9AEAAEBE48E7FBCC54D25494CCD7BE1
+https://prod.liveshare.vsengsaas.visualstudio.com/join?E2E0812FB9C545B11AE929FB977FCEBE2780
 
 Other things to share:
 
