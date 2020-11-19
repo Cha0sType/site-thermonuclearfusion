@@ -26,9 +26,10 @@
 
     <pagebutton onclick="location.href='reactors/tokamak'" style="margin-left: 65vw;">
             Wie funktioniert ein Tokamak?</pagebutton>
-    <pagebutton onclick="location.href='reactors/vergleich'" style="margin-left: 65vw; margin-top: 6vw;">Der Vergleich von Stellarator und Tokamak</pagebutton>
+    <pagebutton onclick="location.href='reactors/vergleich'" style="margin-left: 65vw; margin-top: 6vw;">Vergleich: Stellarator und Tokamak</pagebutton>
     <img src="{{url_for('static', filename='img/lithium_pic.png')}}"
     alt="Hier ist ein Bild verloren gegangen...">
+    {{ footer|safe }}
 </body>
 
 </html>
