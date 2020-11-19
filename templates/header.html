@@ -14,27 +14,11 @@
     
         --name--
     <!-- In our main.py, the --name-- will be replaced by a h2 with the current website's name -->
-    <div class="inputLine"></div>
-    <input onfocusout="resetSearch()" class="input" style="display: none; margin-bottom: 0.3125vw;">
-    <span onclick="search()" class="material-icons search" style="font-size: 3.71vw; margin-left: 56.1vw; color: rgba(255, 255, 255, 0.8); cursor: pointer;">search</span>
 </div>
 
 <style>
 
-    @keyframes inputLine {
-        from { width: 0vw; }
-        to { width: 9.1vw; }
-    }
 
-    @keyframes resetInputLine {
-        from { width: 9.1vw; }
-        to { width: 0vw; }
-    }
-
-    @keyframes resetSearchIcon {
-        from { margin-left: 65vw; }
-        to { margin-left: 56.1vw; }
-    }
 
     @keyframes dropdownAnimation {
         0% { transform: rotate(0deg); }
@@ -43,50 +27,7 @@
         100% { transform: rotate(0deg); }
     }
 
-    .inputLine {
-        position: absolute;
-        margin-left: 72.687vw;
-        /* 
-           The inputLine should actually have been the same as
-           the resetSearchIcon margin-left value from 'from', but since
-           it's absolute, it's not being affected by the other header elements
-           and it needs to be a specific value higher.
-        */
-        width: 0vw;
-        height: 0.25vw;
-        background-color: #12121B;
-    }
 
-    .input {
-        margin-left: 56.1vw;
-        background: transparent;
-        border: none;
-        
-        font-size: 1.31vw;
-        color: rgba(255, 255, 255, 0.8);
-    }
-
-    .input:focus {
-        outline: none;
-    }
-
-    .animateInputLine {
-        animation-name: inputLine;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-    }
-
-    .resetInputLineAnimation {
-        animation-name: resetInputLine;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-    }
-
-    .resetSearchIcon {
-        animation-name: resetSearchIcon;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-    }
 
     .dropdownAnimation {
         animation-name: dropdownAnimation;
