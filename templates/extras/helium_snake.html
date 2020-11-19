@@ -4,15 +4,22 @@
 
     <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
     <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
-
+    
     <meta charset="UTF-8">
     <title>Helium Snake</title>
-    <a target="templates/extras/story.html" onclick="window.open('', 'templates/extras/story.html', 'width=580,height=560,scrollbars=no, toolbar=no,status=no,resizable=yes,menubar=no,location=no,directories=no,top=50,left=10')"href="story.html">Hier geht's zum Popup</a>
+    
 </head>
 <body>
 
     {{ header|safe }}
-
+    <p>Hier geht's zur <infobox>
+        <u>Story!</u>
+        <info style="position: absolute; padding: 2vw;margin-top: 10vw; margin-left: 41vw; background-color: #f7f7f7; box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.2);">
+            
+        </info>
+    </infobox></p>
+    
+    
     <canvas id="snake" width="398" height="398"></canvas>
 
 </body>
@@ -28,7 +35,14 @@
         width: 35vw;
         height: auto;
     }
+    
+    info {
+        display: none;
+    }
 
+    infobox:hover info {
+        display: block;
+    }
 </style>
 <script src="{{url_for('static', filename='scripts/helium_snake/init.js')}}"></script>
 <script src="{{url_for('static', filename='scripts/index.js')}}"></script>
