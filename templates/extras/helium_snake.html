@@ -12,12 +12,10 @@
 <body>
 
     {{ header|safe }}
-    <p>Hier geht's zur <infobox>
-        <u>Story!</u>
-        <info style="position: absolute; padding: 2vw;margin-top: 10vw; margin-left: 41vw; background-color: #f7f7f7; box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.2);">
-            
-        </info>
-    </infobox></p>
+
+    <info style="position: absolute; padding: 2vw; margin-top: 10vw; margin-left: 41vw; background-color: #f7f7f7; box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.2);">
+        Das ist Manfred die Schlange. Sie ist eine Frau. Manfred ist etwas besonders. Sie ernährt sich nämlich ausschließlich von Helium-4. Das liegt daran, dass Manfred nicht nur Zeit-, sondern auch Augenzeugin von Tschernobyl war. Hilf Manfred, Deuterium (rot) aufzusammeln und es aufs Tritium (orange) zu schießen, um Helium-4 herzustellen. Aber Achtung! Berühre nicht das leicht radioaktive Tritium, denn sonst macht Manfred großes Aua. Bumm.
+    </info>
     
     
     <canvas id="snake" width="398" height="398"></canvas>
@@ -37,7 +35,7 @@
     }
     
     info {
-        display: none;
+        display: block;
     }
 
     infobox:hover info {
