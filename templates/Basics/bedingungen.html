@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+    <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    {{ header|safe }}
+
+    <h1>Fusionsbedingungen</h1>
+
+    <p>
+        Für eine Kernfusion ist eine gewisse Energieaufwendung notwendig.
+        Die Atomkerne haben wegen den positiv geladenen Protonen eine
+        sogenannte „Coulombbarriere“. Das heißt, dass sich zwei positiv
+        geladene Teilchen abstoßen und es deshalb für sie schwer ist, diese
+        Barriere zu überwinden. Durch genug Energiezufuhr besitzen die Kerne
+        genug Energie und sind schnell genug, um die Coulombbarriere zu überwinden.
+        Eine Fusion kann daher nur in heißem Plasma funktionieren. Auf der Erde müsste das 
+        Plasma etwa sechs bis sieben Mal heißer sein, als auf der Sonne, also über 100 Mio. °C,
+        da ein viel geringerer Druck vorhanden ist.
+    </p>
+    <img src="{{url_for('static', filename='img/Coulombbarriere.svg')}}" alt="Ansicht der Barriere" style="position: absolute; margin-left: 50%; margin-top: -7vw; transform: translateX(-50%); width: 60vw; height: auto;">
+    <p style="margin-top: 20vw;">
+        Da dies ein hoher Energieaufwand ist und man nicht mehr Energie reingeben möchte,
+        als man auch herausbekommt, benutzt man die Stoffe Deuterium und Tritium, bei ihrer
+        Fusion ist die Energiebilanz nämlich positiv. Die Temperatur könnte durchaus erzeugt
+        werden, jedoch ist das Plasma dann so heiß, dass es jedes Material der Erde zum
+        Schmelzen bringen würde. Außerdem kühlt es sofort ab, wenn es einen anderen Stoff
+        berührt. Die Lösung für das Problem liegt in der elektrischen Leitfähigkeit von Plasma.
+        Man leitet Strom durch das Plasma, was ein Magnetfeld dessen erzeugt. Die hohen Temperaturen
+        können nun gehalten werden, da man das Plasma durch ein komplexes Magnetfeld einfangen kann.
+    </p>
+    <pagebutton onclick="location.href='/reactors'" style="margin-left: 67vw; margin-top: -2.5vw; min-width: 11vw;">
+        Hier geht's zu den Reaktoren
+    </pagebutton>
+
+    <div style="margin-top: 8.5vw;"></div>
+    {{ footer|safe }}
+
+</body>
+</html>
+<script src="{{url_for('static', filename='scripts/index.js')}}"></script>

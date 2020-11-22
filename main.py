@@ -27,9 +27,14 @@ def science():
 @app.route('/basics') #Creating basics sub page and rendering specified template
 def basics():
     return render_template('Basics/basics_index.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Physik der Kernfusion")))
-@app.route('/fusionsablauf')
+
+@app.route('/basics/fusionsablauf')
 def fusionsablauf():
     return render_template('Basics/fusionsablauf.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Wie läuft eine Fusion ab?")))
+
+@app.route('/basics/bedingungen')
+def bedingungen():
+    return render_template('Basics/bedingungen.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Helium Snake")))
 
 @app.route('/reactors') # Creating reactors sub page and rendering specified template
 def reactors():
