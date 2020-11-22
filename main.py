@@ -1,20 +1,20 @@
 from flask import Flask, render_template # Importing flask page for the web interface
 from dependencies import openDependencies # Loading openDependencies function out of dependencies modul, which is acutally dependencies.py. 
-import json
+import json #Importing JSON to use it for our config file
 
 with open('server_config.json', 'r') as server:
     config = json.load(server)
 
 
 port = config["port"]
-if config["debug"] == "true":
+if config["debug"] == "true": #Testing for false because when it's an invalid input in the config, it is usually the best to go with debug off
     debug = True
 else:
     debug = False
-if config["threaded"] == "true":
-    threaded = True
-else:
+if config["threaded"] == "false": #Testing for false because when it's an invalid input in the config, it is usually the best to go with threaded
     threaded = False
+else:
+    threaded = True
 
 
 dependencies = openDependencies()

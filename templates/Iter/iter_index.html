@@ -15,13 +15,16 @@
     {{ header|safe }}
     <h2>Was ist ITER?</h2>
 
-    <p>
+    <p id="top-content">
         ITER (Eng. International Thermonuclear Experimental Reactor) ist ein Versuchs- und Foschungsreaktor der im
         Süden Frankreichs gebaut wird. Der Reaktor ist ein gemeinsames Projekt der EU Staaten (inklusive der Schweiz),
         China, Japan, Korea, Russland und den USA. <br> Der entstehende Reaktor beruht auf dem <a href="/reactors/tokamak">Tokamak</a>-Prinzip.
     </p>
     <img src="{{url_for('static', filename='img/iter-view.jpg')}}" alt="404 Image not found">
-
+    <p id="right-content">
+        Auf den folgenden Seiten wirst du erfahren warum ITER ein wichtiges Forschungsprojekt, was die Forschungsziele sind und inwelchem Status sich das Projekt momentan befindet.
+    </p>
+    <pagebutton onclick="location.href='iter/iter_subpage1'"></pagebutton>
 </body>
 
 </html>
@@ -29,7 +32,7 @@
 </script>
 <style>
 
-    p {
+    #top-content {
         margin-top: 1vw;
     }
     h2 {
@@ -44,5 +47,11 @@
         height: 30vw;
         padding-top: 1vw;
         padding-left: 7.1vw;
+        float: left;
+        padding-right: 2vw;
+    }
+
+    #right-content {
+        padding: 1vw;
     }
 </style>
