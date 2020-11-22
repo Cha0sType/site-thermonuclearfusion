@@ -18,23 +18,26 @@
     <p id="top-content">
         ITER (Eng. International Thermonuclear Experimental Reactor) ist ein Versuchs- und Foschungsreaktor der im
         Süden Frankreichs gebaut wird. Der Reaktor ist ein gemeinsames Projekt der EU Staaten (inklusive der Schweiz),
-        China, Japan, Korea, Russland und den USA. <br> Der entstehende Reaktor beruht auf dem <a href="/reactors/tokamak">Tokamak</a>-Prinzip.
+        China, Japan, Korea, Russland und den USA. <br> Der entstehende Reaktor beruht auf dem <a
+            href="/reactors/tokamak">Tokamak</a>-Prinzip.
     </p>
     <img src="{{url_for('static', filename='img/iter-view.jpg')}}" alt="404 Image not found">
     <p id="right-content">
-        Auf den folgenden Seiten wirst du erfahren warum ITER ein wichtiges Forschungsprojekt, was die Forschungsziele sind und inwelchem Status sich das Projekt momentan befindet.
+        Auf den folgenden Seiten wirst du erfahren warum ITER ein wichtiges Forschungsprojekt, was die Forschungsziele
+        sind und inwelchem Status sich das Projekt momentan befindet.
     </p>
-    <pagebutton onclick="location.href='iter/iter_subpage1'"></pagebutton>
+    <pagebutton onclick="location.href='iter/sience'">Was ist der Status von Iter?</pagebutton>
+    <pagebutton onclick="location.href='iter/sience'"style="margin-top: 6vw;">Was sind die Forschungsziele von ITER?</pagebutton>
 </body>
 
 </html>
 <script src="{{url_for('static', filename='scripts/index.js')}}">
 </script>
 <style>
-
     #top-content {
         margin-top: 1vw;
     }
+
     h2 {
         padding-top: 1.5vw;
         padding-left: 7.1vw;
@@ -43,15 +46,25 @@
         font-size: 4.1vw;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
     img {
-        height: 30vw;
+        position: relative;
+        height: 23vw;
         padding-top: 1vw;
         padding-left: 7.1vw;
         float: left;
         padding-right: 2vw;
+        padding-bottom: 2vw;
     }
 
     #right-content {
-        padding: 1vw;
+        position: relative;
+        padding: 0;
+
+    }
+
+    pagebutton {
+        position: absolute;
+        margin-left: 45vw;;
     }
 </style>
