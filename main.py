@@ -34,7 +34,7 @@ def fusionsablauf():
 
 @app.route('/basics/bedingungen')
 def bedingungen():
-    return render_template('Basics/bedingungen.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Helium Snake")))
+    return render_template('Basics/bedingungen.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Wann kommt es zur Fusion?")))
 
 @app.route('/reactors') # Creating reactors sub page and rendering specified template
 def reactors():
