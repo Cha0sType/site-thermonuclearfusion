@@ -1,14 +1,31 @@
 from flask import Flask, render_template # Importing flask page for the web interface
 from dependencies import openDependencies # Loading openDependencies function out of dependencies modul, which is acutally dependencies.py. 
+import json #Importing JSON to use it for our config file
 
-dependencies = openDependencies() # Loading dependencies
+with open('server_config.json', 'r') as server:
+    config = json.load(server)
+
+
+port = config["port"]
+if config["debug"] == "true": #Testing for false because when it's an invalid input in the config, it is usually the best to go with debug off
+    debug = True
+else:
+    debug = False
+if config["threaded"] == "false": #Testing for false because when it's an invalid input in the config, it is usually the best to go with threaded
+    threaded = False
+else:
+    threaded = True
+
+
+dependencies = openDependencies()
+
 header = dependencies[0]   # Defining header out of dependencies array
 footer = dependencies[1]
 icon = dependencies[2]  # Defining icon out of dependencies array
 
 app = Flask(__name__) # Setting up flask
 
-PORT = 1234  # Defining the port the server will be listing to
+ # Defining the port the server will be listing to
 
 headername = "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: 50%; transform: translateX(-60%); position: absolute;'>---</h2>"
 
@@ -57,6 +74,6 @@ def snake():
     return render_template('extras/helium_snake.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Helium Snake")))
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=PORT, debug=True, threaded=True)
+    app.run(host='0.0.0.0', port=port, debug=debug, threaded=threaded)
     # Starting the server, the threaded=True makes it possible to handle more connections
     # at the same time, which makes it more performant
