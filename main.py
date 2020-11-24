@@ -35,11 +35,15 @@ def index():
 
 @app.route('/iter') # Creating iter sub page and rendering specified template
 def iter():
-    return render_template('Iter/iter_index.html', footer=footer, header=header.replace('--name--', headername.replace('---', "ITER - Ein internationales Forschungsprojekt")))
+    return render_template('Iter/iter_index.html', footer=footer.replace('--sources--', '<a href="https://de.wikipedia.org/wiki/ITER" target="_blank">ITER Wiki</a><br><a href="https://iter.org" target="_blank">Iter (Offizelle Website)</a>'), header=header.replace('--name--', headername.replace('---', "ITER - Ein internationales Forschungsprojekt")))
 
 @app.route('/iter/sience') # Creating iter sub page and rendering specified template
 def science():
-    return render_template('Iter/iter_subpage1.html', footer=footer, header=header.replace('--name--', headername.replace('---', "ITER - Forschung in Europa")))
+    return render_template('Iter/iter_sience.html', footer=footer, header=header.replace('--name--', headername.replace('---', "ITER - Forschung in Europa")))
+
+@app.route('/iter/status')
+def status():
+    return render_template('Iter/iter_status.html', footer=footer, header=header.replace('--name--', headername.replace('---', "ITER - Status")))
 
 @app.route('/basics') #Creating basics sub page and rendering specified template
 def basics():

@@ -21,13 +21,25 @@
         China, Japan, Korea, Russland und den USA. <br> Der entstehende Reaktor beruht auf dem <a
             href="/reactors/tokamak">Tokamak</a>-Prinzip.
     </p>
-    <img src="{{url_for('static', filename='img/iter-view.jpg')}}" alt="404 Image not found">
-    <p id="right-content">
-        Auf den folgenden Seiten wirst du erfahren warum ITER ein wichtiges Forschungsprojekt, was die Forschungsziele
-        sind und inwelchem Status sich das Projekt momentan befindet.
-    </p>
-    <pagebutton onclick="location.href='iter/sience'">Was ist der Status von Iter?</pagebutton>
-    <pagebutton onclick="location.href='iter/sience'"style="margin-top: 6vw;">Was sind die Forschungsziele von ITER?</pagebutton>
+    <div class="content">
+        <img src="{{url_for('static', filename='img/iter-view.jpg')}}" alt="404 Image not found">
+        <p id="right-content">
+            Auf den folgenden Seiten wirst du erfahren warum ITER ein wichtiges Forschungsprojekt, was die
+            Forschungsziele
+            sind und inwelchem Status sich das Projekt momentan befindet.
+        </p>
+        <pagebutton onclick="location.href='iter/status'">
+            Was ist der Status von ITER?
+        </pagebutton>
+        <pagebutton onclick="location.href='iter/sience'" style="margin-top: 6vw;">
+            Was sind die Forschungsziele von ITER?
+        </pagebutton>
+    </div>
+    <div class="spacer"></div>
+
+    {{ footer | safe }}
+
+
 </body>
 
 </html>
@@ -65,6 +77,11 @@
 
     pagebutton {
         position: absolute;
-        margin-left: 45vw;;
+        margin-left: 45vw;
+        ;
+    }
+
+    .content {
+        margin-bottom: 20vw;
     }
 </style>
