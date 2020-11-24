@@ -43,15 +43,15 @@ def science():
 
 @app.route('/basics') #Creating basics sub page and rendering specified template
 def basics():
-    return render_template('Basics/basics_index.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Physik der Kernfusion")))
+    return render_template('Basics/basics_index.html', footer=footer.replace('--sources--', '<a href="https://physikunterricht-online.de/jahrgang-12/kernfusion/" target="_blank">Kernfusion</a><br><a href="https://physikunterricht-online.de/jahrgang-12/kernfusion/" target="_blank">Kernfusion (Allgemein)</a><br><a href="https://www.lernhelfer.de/schuelerlexikon/physik/artikel/kernfusion#" target="_blank">Kernfusion (Sonne)</a>'), header=header.replace('--name--', headername.replace('---', "Physik der Kernfusion")))
 
 @app.route('/basics/fusionsablauf')
 def fusionsablauf():
-    return render_template('Basics/fusionsablauf.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Wie läuft eine Fusion ab?")))
+    return render_template('Basics/fusionsablauf.html', footer=footer.replace('--sources--', '<a href="https://physikunterricht-online.de/jahrgang-12/kernspaltung/" target="_blank">Allgemein</a><br><a href="https://www.youtube.com/watch?v=fBJ7MW2daPU" target="_blank">Deuterium und Tritium</a><br><a href="https://www.youtube.com/watch?v=_g54PJhXYxU">Masseäquivalenzformel <br>und Hitze</a>'), header=header.replace('--name--', headername.replace('---', "Wie läuft eine Fusion ab?")))
 
 @app.route('/basics/bedingungen')
 def bedingungen():
-    return render_template('Basics/bedingungen.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Wann kommt es zur Fusion?")))
+    return render_template('Basics/bedingungen.html', footer=footer.replace('--sources--', '<a href="https://physikunterricht-online.de/jahrgang-12/kernspaltung/" target="_blank">Allgemein</a><br><a href="https://www.youtube.com/watch?v=fBJ7MW2daPU" target="_blank">Deuterium und Tritium</a><br><a href="https://www.youtube.com/watch?v=_g54PJhXYxU">Masseäquivalenzformel <br>und Hitze</a>'), header=header.replace('--name--', headername.replace('---', "Wann kommt es zur Fusion?")))
 
 @app.route('/reactors') # Creating reactors sub page and rendering specified template
 def reactors():
