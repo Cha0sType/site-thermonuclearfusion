@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+    <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
+
+    <meta charset="UTF-8">
+    <title>Helium Snake</title>
+
+</head>
+
+<body onclick="tutorialNext()">
+
+    {{ header|safe }}
+    <p>
+        <info id="story"
+            style="position: absolute; padding: 2vw; align-self: 0; background-color: #f7f7f7; box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.2);">
+            Das ist Manfred die Schlange.
+        </info>
+    </p>
+
+
+
+    <canvas id="snake" width="398" height="398"></canvas>
+
+</body>
+
+</html>
+<style>
+    body {
+        text-align: center;
+    }
+
+    canvas {
+        margin-top: 0.5vw;
+        width: 35vw;
+        height: auto;
+    }
+
+    info {
+        display: block;
+    }
+
+    info::-moz-selection { /* Code for Firefox */
+        background: transparent;
+    }
+  
+  info::selection {
+    background: transparent;
+  }
+
+</style>
+<script>
+
+    story = ["Sie ist eine Frau.", "Manfred ist etwas besonders, sie ernährt sich nämlich ausschließlich von Helium-4.", "Das liegt daran, dass Manfred nicht nur Zeit-, sondern auch Augenzeugin von Tschernobyl war.", "Hilf Manfred, Deuterium (rot) aufzusammeln und es aufs Tritium (orange) zu schießen, um Helium-4 herzustellen.", "Aber Achtung! Berühre nicht das leicht radioaktive Tritium, denn sonst macht Manfred großes Aua.", "Bumm.", "undefined", "Nein Spaß, wir haben nicht vergessen, dass zu berücksichtigen!"];
+    storyindex = -1;
+
+    function tutorialNext() {
+        if (storyindex < story.length - 1) {
+            storyindex++
+            document.getElementById('story').innerHTML = story[storyindex];
+        } else {
+            document.getElementById('story').style.display = "none";
+        }
+    }
+
+</script>
+<script src="{{url_for('static', filename='scripts/helium_snake/init.js')}}"></script>
+<script src="{{url_for('static', filename='scripts/index.js')}}"></script>

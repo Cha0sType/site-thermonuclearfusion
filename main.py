@@ -31,7 +31,7 @@ headername = "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; f
 
 @app.route('/') # Creating index and rendering specified template
 def index():
-    return render_template('index.html', icon=icon, footer=footer, header=header.replace('--name--', headername.replace('---', "Kernfusionsreaktoren")))
+    return render_template('index.html', icon=icon, footer=footer.replace('--sources--', 'Für diese Seite<br>gibt es keine<br>Quellen'), header=header.replace('--name--', headername.replace('---', "Kernfusionsreaktoren")))
 
 @app.route('/iter') # Creating iter sub page and rendering specified template
 def iter():
@@ -71,7 +71,7 @@ def vergleich():
 
 @app.route('/extras/snake')
 def snake():
-    return render_template('extras/helium_snake.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Helium Snake")))
+    return render_template('extras/HeliumSnake/helium_snake.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Helium Snake")))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port, debug=debug, threaded=threaded)
