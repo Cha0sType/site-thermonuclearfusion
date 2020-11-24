@@ -95,3 +95,12 @@ pagebutton:hover {
     color: #4d4d4d;
     box-shadow: 0vw 0.12vw 0.1vw 0.1vw rgba(0,0,0,0.12);
 }
+
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

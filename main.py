@@ -31,7 +31,7 @@ headername = "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; f
 
 @app.route('/') # Creating index and rendering specified template
 def index():
-    return render_template('index.html', icon=icon, footer=footer, header=header.replace('--name--', headername.replace('---', "Kernfusionsreaktoren")))
+    return render_template('index.html', icon=icon, footer=footer.replace('--sources--', 'Für diese Seite<br>gibt es keine<br>Quellen'), header=header.replace('--name--', headername.replace('---', "Kernfusionsreaktoren")))
 
 @app.route('/iter') # Creating iter sub page and rendering specified template
 def iter():
@@ -43,15 +43,15 @@ def science():
 
 @app.route('/basics') #Creating basics sub page and rendering specified template
 def basics():
-    return render_template('Basics/basics_index.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Physik der Kernfusion")))
+    return render_template('Basics/basics_index.html', footer=footer.replace('--sources--', '<a href="https://physikunterricht-online.de/jahrgang-12/kernfusion/" target="_blank">Kernfusion</a><br><a href="https://physikunterricht-online.de/jahrgang-12/kernfusion/" target="_blank">Kernfusion (Allgemein)</a><br><a href="https://www.lernhelfer.de/schuelerlexikon/physik/artikel/kernfusion#" target="_blank">Kernfusion (Sonne)</a>'), header=header.replace('--name--', headername.replace('---', "Physik der Kernfusion")))
 
 @app.route('/basics/fusionsablauf')
 def fusionsablauf():
-    return render_template('Basics/fusionsablauf.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Wie läuft eine Fusion ab?")))
+    return render_template('Basics/fusionsablauf.html', footer=footer.replace('--sources--', '<a href="https://physikunterricht-online.de/jahrgang-12/kernspaltung/" target="_blank">Allgemein</a><br><a href="https://www.youtube.com/watch?v=fBJ7MW2daPU" target="_blank">Deuterium und Tritium</a><br><a href="https://www.youtube.com/watch?v=_g54PJhXYxU">Masseäquivalenzformel <br>und Hitze</a>'), header=header.replace('--name--', headername.replace('---', "Wie läuft eine Fusion ab?")))
 
 @app.route('/basics/bedingungen')
 def bedingungen():
-    return render_template('Basics/bedingungen.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Helium Snake")))
+    return render_template('Basics/bedingungen.html', footer=footer.replace('--sources--', '<a href="https://physikunterricht-online.de/jahrgang-12/kernspaltung/" target="_blank">Allgemein</a><br><a href="https://www.youtube.com/watch?v=fBJ7MW2daPU" target="_blank">Deuterium und Tritium</a><br><a href="https://www.youtube.com/watch?v=_g54PJhXYxU">Masseäquivalenzformel <br>und Hitze</a>'), header=header.replace('--name--', headername.replace('---', "Wann kommt es zur Fusion?")))
 
 @app.route('/reactors') # Creating reactors sub page and rendering specified template
 def reactors():
@@ -71,7 +71,7 @@ def vergleich():
 
 @app.route('/extras/snake')
 def snake():
-    return render_template('extras/helium_snake.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Helium Snake")))
+    return render_template('extras/HeliumSnake/helium_snake.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Helium Snake")))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port, debug=debug, threaded=threaded)
