@@ -27,7 +27,7 @@ app = Flask(__name__) # Setting up flask
 
  # Defining the port the server will be listing to
 
-headername = "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; margin-bottom: 0.9vw; margin-left: 50%; transform: translateX(-60%); position: absolute;'>---</h2>"
+headername = "<h2 style='color: rgba(255, 255, 255, 0.8); font-weight: normal; font-size: 1.61vw; position: absolute; margin-bottom: 0.9vw; margin-left: 50%; transform: translateX(-89%);'>---</h2>"
 
 @app.route('/') # Creating index and rendering specified template
 def index():
@@ -73,9 +73,13 @@ def tokamak():
 def vergleich():
     return render_template('Reactors/vergleich.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Vergleich")))
 
+@app.route('/quiz')
+def quiz():
+    return render_template('extras/Quiz/quiz.html', footer=footer.replace('--sources--', 'Für diese Seite<br>gibt es keine<br>Quellen'), header=header.replace('--name--', headername.replace('---', "Quiz")))
+
 @app.route('/extras/snake')
 def snake():
-    return render_template('extras/HeliumSnake/helium_snake.html', footer=footer, header=header.replace('--name--', headername.replace('---', "Helium Snake")))
+    return render_template('extras/HeliumSnake/helium_snake.html', footer=footer.replace('--sources--', 'Für diese Seite<br>gibt es keine<br>Quellen'), header=header.replace('--name--', headername.replace('---', "Helium Snake")))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port, debug=debug, threaded=threaded)

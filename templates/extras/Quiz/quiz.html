@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
+    <link rel="icon" type="img/svg" href="{{url_for('static', filename='Icon.svg')}}">
+
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+</head>
+<body>
+
+    {{ header|safe }}
+
+    <span id="percentage">10%</span>
+    <div id="barback"><div id="barfront"><div id="barlight"></div></div></div>
+    <h1 id="question">Warum sind Kartoffeln nicht Gurken?</h1>
+    <answers>
+        <button id="a1">
+            Weil sie Karotten sind
+        </button>
+        <button id="a2">
+            Weil das halt so ist
+        </button>
+        <button id="a3">
+            Was ist das für ne Frage WTF?????!!!!!!
+        </button>
+    </answers> 
+    
+</body>
+<div style="margin-top: 43vw;"></div>
+{{ footer|safe }}
+</html>
+
+<style>
+
+    #percentage {
+        position: absolute;
+        margin-top: 2vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.7vw;
+        font-weight: 500;
+        color: #0EDF00;
+    }
+
+    #barback {
+        position: absolute;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 6vw;
+        width: 40vw;
+        height: 1vw;
+        border-radius: 5vw;
+        background-color: #D1D1D1;
+    }
+
+    #barfront {
+        position: absolute;
+        width: 10vw;
+        height: 1vw;
+        border-radius: 5vw;
+        background-color: #0EDF00;
+        box-shadow: 0.025vw 0vw 0vw 0vw rgba(0,0,0,0.04),
+                0.05vw 0vw 0vw 0vw rgba(0,0,0,0.04),
+                0.1vw 0vw 0vw 0vw rgba(0,0,0,0.04),
+                0.2vw 0vw 0vw 0vw rgba(0,0,0,0.04);
+    }
+
+    #barlight {
+        position: absolute;
+        margin-left: 0.5vw;
+        margin-top: 0.2vw;
+        width: 9vw;
+        height: 0.2vw;
+        border-radius: 5vw;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    #question, answers {
+        margin-left: 12vw;
+    }
+
+    #question {
+        position: absolute;
+        margin-top: 9vw;
+        font-size: 2.7vw;
+        font-weight: 500;
+    }
+
+    answers {
+        position: absolute;
+    }
+
+    button {
+        position: absolute;
+        outline: none;
+        cursor: pointer;
+        font-size: 2.025vw;
+        padding-left: 2vw;
+        padding-top: 0.3vw;
+        text-align: left;
+        width: 44vw;
+        height: 4.5vw;
+        color: #949494;
+        background-color: #E1E1E1;
+        border: none;
+        border-bottom: 0.4vw #C4C4C4 solid;
+        border-radius: 0.5vw;
+    }
+
+    button:hover {
+        background-color: #dadada;
+    }
+
+    #a1 {
+        margin-top: 17vw;
+    }
+
+    #a2 {
+        margin-top: 23.5vw;
+    }
+
+    #a3 {
+        margin-top: 31vw;
+    }
+    
+</style>
+
+<script src="{{url_for('static', filename='scripts/index.js')}}"></script>
