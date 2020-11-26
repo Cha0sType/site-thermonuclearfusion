@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{url_for('static', filename='iter_index.css')}}">
@@ -6,7 +7,28 @@
     <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/index.css')}}">
     <title>ITER - Forschung in Europa</title>
 </head>
+
 <body>
     {{ header|safe }}
+    <div class="content">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam aperiam doloremque velit amet
+            officia natus iure in? Quam, expedita velit et sint ex laborum quas perspiciatis. Tempora, fugit
+            perspiciatis?
+        </p>
+        <img src="" alt="404 Not found">
+    </div>
+
+    {{ footer|safe }}
 </body>
+    <style>
+
+        img {
+            margin-left: 7.1vw;
+        }
+
+        .content {
+            margin-bottom: 20vw;
+        }
+    </style>
 </html>
