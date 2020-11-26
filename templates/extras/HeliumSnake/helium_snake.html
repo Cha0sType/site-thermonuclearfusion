@@ -21,7 +21,7 @@
         </info>
     </p>
 
-
+    <video id="bomb" src="{{url_for('static', filename='video/bomb.mp4')}}"></video>
 
     <canvas id="snake" width="398" height="398"></canvas>
 
@@ -49,6 +49,14 @@
   
   info::selection {
     background: transparent;
+  }
+
+  #bomb {
+      position: absolute;
+      display: none;
+      margin-top: -17.4vw;
+      width: 100vw;
+      height: auto;
   }
 
 </style>

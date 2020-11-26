@@ -12,6 +12,7 @@ function init() {
     doshoot = false;
     deuteriumActivated = true;
     tritiumActivated = true;
+    gamestarted = false;
 
     trail = []; // trail x's and y's
     tailLength = 2; // trail length (head not included)
@@ -50,6 +51,9 @@ function draw() {
 }
 
 function run() {
+    if (xv != 0 && yv != 0) {
+        gamestarted = true;
+    }
     if (xv != 0 || yv != 0) {
         trail.push({x: px, y: py}); // add px and py to list as first part of the trail
     }
@@ -118,6 +122,41 @@ function run() {
             ty = Math.floor(Math.random() * gridSize);
         } while ((dx == px && dy == py) || (tx == px && ty == py) || (dx == tx && dy == ty) || {x: dx, y: dy} in trail || {x: tx, y: ty} in trail);
     }
+
+    for (let i = 0; i < trail.length; i++) {
+        if (px == trail[i].x && py == trail[i].y) {
+            gamestarted = false;
+        xv = 0;
+        yv = 0;
+        px = -1;
+        video = document.getElementById('bomb');
+        video.style.display = "block";
+        video.play();
+        setTimeout(() => {
+            video.pause();
+            video.currentTime = 0;
+            video.style.display = "none";
+            init();
+        }, 6000);
+        }
+    }
+
+    if ((px == tx && py == ty) || {x: px, y: py} in trail && gamestarted) {
+        gamestarted = false;
+        xv = 0;
+        yv = 0;
+        px = -1;
+        video = document.getElementById('bomb');
+        video.style.display = "block";
+        video.play();
+        setTimeout(() => {
+            video.pause();
+            video.currentTime = 0;
+            video.style.display = "none";
+            init();
+        }, 6000);
+    }
+
     draw();
 }
 
