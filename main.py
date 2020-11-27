@@ -6,7 +6,7 @@ with open('server_config.json', 'r') as server:
     config = json.load(server)
 
 
-port = config["port"]
+PORT = config["port"]
 if config["debug"] == "true": #Testing for false because when it's an invalid input in the config, it is usually the best to go with debug off
     debug = True
 else:
@@ -81,7 +81,11 @@ def quiz():
 def snake():
     return render_template('extras/HeliumSnake/helium_snake.html', footer=footer.replace('--sources--', 'Für diese Seite<br>gibt es keine<br>Quellen'), header=header.replace('--name--', "Helium Snake"))
 
+@app.route('/secret')
+def secret():
+    return '<meta http-equiv="refresh" content="3; URL=/extras/snake"><body style="display: flex; justify-content: center; align-items: center;"><h1 id="text" style="font-family: Arial; font-size: 3vw;">Du alter Secrethunter</h></body><script>setTimeout(() => {document.getElementById("text").innerHTML = "Du hast das geheime Snake Game gefunden =)!";}, 1500);</script>'
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=port, debug=debug, threaded=threaded)
+    app.run(host='0.0.0.0', port=PORT, debug=debug, threaded=threaded)
     # Starting the server, the threaded=True makes it possible to handle more connections
     # at the same time, which makes it more performant

@@ -11,17 +11,17 @@
 
     {{ header|safe }}
 
-    <span id="percentage">10%</span>
-    <div id="barback"><div id="barfront"><div id="barlight"></div></div></div>
+    <span id="percentage">0%</span>
+    <div id="barback"><div id="barfront" onclick="location.href='/secret'"><div id="barlight"></div></div></div>
     <h1 id="question">Warum sind Kartoffeln nicht Gurken?</h1>
     <answers>
-        <button id="a1">
+        <button id="a1" onclick="answer(1)">
             Weil sie Karotten sind
         </button>
-        <button id="a2">
+        <button id="a2" onclick="answer(2)">
             Weil das halt so ist
         </button>
-        <button id="a3">
+        <button id="a3" onclick="answer(3)">
             Was ist das für ne Frage WTF?????!!!!!!
         </button>
     </answers> 
@@ -56,7 +56,7 @@
 
     #barfront {
         position: absolute;
-        width: 10vw;
+        width: 0vw;
         height: 1vw;
         border-radius: 5vw;
         background-color: #0EDF00;
@@ -70,7 +70,7 @@
         position: absolute;
         margin-left: 0.5vw;
         margin-top: 0.2vw;
-        width: 9vw;
+        width: 0vw;
         height: 0.2vw;
         border-radius: 5vw;
         background-color: rgba(255, 255, 255, 0.4);
@@ -126,4 +126,5 @@
     
 </style>
 
+<script src="{{url_for('static', filename='scripts/quiz.js')}}"></script>
 <script src="{{url_for('static', filename='scripts/index.js')}}"></script>
