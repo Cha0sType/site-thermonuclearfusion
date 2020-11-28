@@ -1,8 +1,8 @@
 
-questions = ["2", "3", "4", "5", "6", "7", "8", "9", "10"];
-a1 = ["2", "3", "4", "5", "6", "7", "8", "9", "10"];
-a2 = ["2", "3", "4", "5", "6", "7", "8", "9", "10"];
-a3 = ["2", "3", "4", "5", "6", "7", "8", "9", "10"];
+questions = ["Wie heiß muss es in einem Fusionsreaktor sein,<br>damit er auf der Erde funktioniert?", "3", "4", "5", "6", "7", "8", "9", "10"];
+a1 = ["~100 Tsd. °C", "3", "4", "5", "6", "7", "8", "9", "10"];
+a2 = ["~100 Mio. °C", "3", "4", "5", "6", "7", "8", "9", "10"];
+a3 = ["~100 Mrd. °C", "3", "4", "5", "6", "7", "8", "9", "10"];
 correctAnswers = [1, 2, 3, 1, 2, 3, 1, 2, 3, 2];
 
 questionNum = 0;
@@ -87,12 +87,34 @@ function ask(i) {
     }
 
     setTimeout(() => {
-        document.getElementById('percentage').innerHTML = (questionNum) * 10 + "%";
-        document.getElementById('barfront').style.width = (questionNum) * 4 + "vw";
-        document.getElementById('barlight').style.width = (questionNum) * 4 - 1 + "vw";
-        document.getElementById('question').innerHTML = questions[questionNum - 1];
-        document.getElementById('a1').innerHTML = a1[questionNum - 1];
-        document.getElementById('a2').innerHTML = a2[questionNum - 1];
-        document.getElementById('a3').innerHTML = a3[questionNum - 1];
+        if (questionNum < 10) {
+            document.getElementById('percentage').innerHTML = (questionNum) * 10 + "%";
+            document.getElementById('barfront').style.width = (questionNum) * 4 + "vw";
+            document.getElementById('barlight').style.width = (questionNum) * 4 - 1 + "vw";
+            document.getElementById('question').innerHTML = questions[questionNum - 1];
+            document.getElementById('a1').innerHTML = a1[questionNum - 1];
+            document.getElementById('a2').innerHTML = a2[questionNum - 1];
+            document.getElementById('a3').innerHTML = a3[questionNum - 1];
+        } else {
+            endtext = "";
+
+            if (score == 0) {
+                endtext = "Das ist jetzt schon ganz gut,<br>aber sieh dir besser erst mal die anderen Seiten an,<br>bevor du das Quiz machst...";
+            } else if (score < 4 && score > 0) {
+                endtext = "War jetzt ehrlich nicht so dufte, aber immerhin.";
+            } else if (score < 7 && score > 0) {
+                endtext = "Das ist schon ganz gut, aber sieh dir ein paar Seiten besser nochmal an.";
+            } else if (score < 10 && score > 0) {
+                endtext = "Boah, das war schon echt gut! ABER NICHT GUT GENUG!!!";
+            } else if (score == 10) {
+                endtext = "Mein lieber Herr Gesangsverein,<br>du bist halt schon wirklich gut drin im Thema!";
+            } else if (score > 10) {
+                endtext = "Hacker. Hör auf damit.";
+            } else if (score < 0) {
+                endtext = "Äääh, jetzt mal ganz ehrlich,<br>SO SCHLECHT kann man doch echt nicht sein!!!";
+            }
+
+            document.getElementsByTagName('quiz')[0].innerHTML = '<span id="percentage">100%</span><div id="barback"><div id="barfront" onclick="location.href=\'/secret\'" style="width: 40vw; box-shadow: none;"><div id="barlight" style="width: 39vw;"></div></div></div><h1 style=\'text-align: center; margin-left: 0vw; margin-top: 11vw; font-size: 3vw;\'>Herzlichen Glückwunsch,<br>du hast ' + score + ' von 10 Fragen richtig beantwortet!<br>' + endtext + '</h1><button onclick="location.href=\'/\'" style=\'margin-left: 50%; margin-top: 5vw; transform: translateX(-50%); border-bottom: none; background-color: #0ed100; color: white; padding-left: 0vw; text-align: center; width: 25vw;\'>Zurück zum Hauptmenü</button>';
+        }
     }, 1500);
 }
