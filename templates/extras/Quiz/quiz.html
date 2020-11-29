@@ -27,7 +27,7 @@
             </button>
         </answers>
     </quiz>
-    <img src="{{url_for('static', filename='img/Snake.svg')}}" id="secret" onclick="location.href='/secret'" alt="snake" style="display: none; position: absolute; margin-top: 44vw; margin-left: 78vw; width: 15vw; height: auto;"></img>
+    <img src="{{url_for('static', filename='img/Snake.svg')}}" id="secret" onclick="activateSecret()" alt="snake" style="display: none; position: absolute; margin-top: 44vw; margin-left: 78vw; width: 15vw; height: auto;"></img>
     
 </body>
 <div style="margin-top: 43vw;"></div>
@@ -130,12 +130,17 @@
 </style>
 
 <script>
-
+    
     quiz = document.getElementsByTagName('quiz')[0].innerHTML;
     document.getElementsByTagName('quiz')[0].innerHTML = "<h1 style='text-align: center; margin-left: 0vw; margin-top: 8vw; font-size: 3vw;'>Bist du bereit, dein Wissen zu testen?</h1><button onclick='startQuiz()' style='margin-left: 50%; margin-top: 5vw; transform: translateX(-50%); border-bottom: none; background-color: #0ed100; color: white; padding-left: 0vw; text-align: center; width: 22vw;'>Quiz starten</button>";
 
     function startQuiz() {
         document.getElementsByTagName('quiz')[0].innerHTML = quiz;
+    }
+
+    function activateSecret() {
+        document.cookie = document.cookie + "hasActivatedSecret";
+        location.href = '/secret';
     }
 
 </script>
