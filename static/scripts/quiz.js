@@ -1,9 +1,10 @@
 
-questions = ["Wie heiß muss es in einem Fusionsreaktor sein,<br>damit er auf der Erde funktioniert?", "3", "4", "5", "6", "7", "8", "9", "10"];
-a1 = ["~100 Tsd. °C", "3", "4", "5", "6", "7", "8", "9", "10"];
-a2 = ["~100 Mio. °C", "3", "4", "5", "6", "7", "8", "9", "10"];
-a3 = ["~100 Mrd. °C", "3", "4", "5", "6", "7", "8", "9", "10"];
-correctAnswers = [1, 2, 3, 1, 2, 3, 1, 2, 3, 2];
+questions = ["Wie heiß muss es mindestens in einem Fusionsreaktor sein,<br>damit er auf der Erde funktioniert?", "3", "4", "5", "Welche Halbwertszeit hat Tritium?", "7", "8", "Wie viele Neutronen hat Deuterium<br>und wie viele Tritium?", "10"];
+a1 = ["100 Tsd. °C", "3", "4", "5", "12,1 Jahre", "7", "8", "Deuterium hat eins, Tritium zwei", "10"];
+a2 = ["100 Mio. °C", "3", "4", "5", "12,2 Jahre", "7", "8", "Deuterium hat drei, Tritium zwei", "10"];
+a3 = ["100 Mrd. °C", "3", "4", "5", "12,3 Jahre", "7", "8", "Deuterium hat keine, Tritium drei", "10"];
+correctAnswers = [1, 2, 3, 1, 3, 3, 1, 2, 1, 2];
+//   Question No. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
 questionNum = 0;
 score = 0;
@@ -22,6 +23,13 @@ function answer(index) {
 
         questionNum++;
         ask(index);
+        setTimeout(() => {
+            if (questionNum == 3) {
+                document.getElementById('secret').style.display = "block";
+            } else {
+                document.getElementById('secret').style.display = "none";
+            }
+        }, 1500);
     }
 }
 
@@ -114,7 +122,7 @@ function ask(i) {
                 endtext = "Äääh, jetzt mal ganz ehrlich,<br>SO SCHLECHT kann man doch echt nicht sein!!!";
             }
 
-            document.getElementsByTagName('quiz')[0].innerHTML = '<span id="percentage">100%</span><div id="barback"><div id="barfront" onclick="location.href=\'/secret\'" style="width: 40vw; box-shadow: none;"><div id="barlight" style="width: 39vw;"></div></div></div><h1 style=\'text-align: center; margin-left: 0vw; margin-top: 11vw; font-size: 3vw;\'>Herzlichen Glückwunsch,<br>du hast ' + score + ' von 10 Fragen richtig beantwortet!<br>' + endtext + '</h1><button onclick="location.href=\'/\'" style=\'margin-left: 50%; margin-top: 5vw; transform: translateX(-50%); border-bottom: none; background-color: #0ed100; color: white; padding-left: 0vw; text-align: center; width: 25vw;\'>Zurück zum Hauptmenü</button>';
+            document.getElementsByTagName('quiz')[0].innerHTML = '<span id="percentage">100%</span><div id="barback"><div id="barfront" style="width: 40vw; box-shadow: none;"><div id="barlight" style="width: 39vw;"></div></div></div><h1 style=\'text-align: center; margin-left: 0vw; margin-top: 11vw; font-size: 3vw;\'>Herzlichen Glückwunsch,<br>du hast ' + score + ' von 10 Fragen richtig beantwortet!<br>' + endtext + '</h1><button onclick="location.href=\'/\'" style=\'margin-left: 50%; margin-top: 5vw; transform: translateX(-50%); border-bottom: none; background-color: #0ed100; color: white; padding-left: 0vw; text-align: center; width: 25vw;\'>Zurück zum Hauptmenü</button>';
         }
     }, 1500);
 }

@@ -13,7 +13,7 @@
 
     <quiz>
         <span id="percentage">0%</span>
-        <div id="barback"><div id="barfront" onclick="location.href='/secret'"><div id="barlight"></div></div></div>
+        <div id="barback"><div id="barfront"><div id="barlight"></div></div></div>
         <h1 id="question">Warum sind Kartoffeln nicht Gurken?</h1>
         <answers>
             <button id="a1" onclick="answer(1)">
@@ -27,6 +27,7 @@
             </button>
         </answers>
     </quiz>
+    <img src="{{url_for('static', filename='img/Snake.svg')}}" id="secret" onclick="location.href='/secret'" alt="snake" style="display: none; position: absolute; margin-top: 44vw; margin-left: 78vw; width: 15vw; height: auto;"></img>
     
 </body>
 <div style="margin-top: 43vw;"></div>
