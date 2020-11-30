@@ -2,16 +2,16 @@ from flask import Flask, render_template # Importing flask page for the web inte
 from dependencies import openDependencies # Loading openDependencies function out of dependencies modul, which is acutally dependencies.py. 
 import json #Importing JSON to use it for our config file
 
-with open('server_config.json', 'r') as server:
+with open('server_config.json', 'r') as server: #Opening and loading JSON config file
     config = json.load(server)
 
 
 PORT = config["port"]
-if config["debug"] == "true": #Testing for false because when it's an invalid input in the config, it is usually the best to go with debug off
+if config["debug"] == "true": #Testing for false because if it's an invalid input in the config, it is usually the best to go with debug turned off
     debug = True
 else:
     debug = False
-if config["threaded"] == "false": #Testing for false because when it's an invalid input in the config, it is usually the best to go with threaded
+if config["threaded"] == "false": #Testing for false because if it's an invalid input in the config, it is usually the best to go with threaded turned on
     threaded = False
 else:
     threaded = True
@@ -39,11 +39,11 @@ def iter():
 
 @app.route('/iter/science') # Creating iter sub page and rendering specified template
 def science():
-    return render_template('Iter/iter_science.html', footer=footer, header=header.replace('--name--', "ITER - Forschung in Europa"))
+    return render_template('Iter/iter_science.html', footer=footer.replace('--sources--', '<a href="https://de.wikipedia.org/wiki/ITER" target="_blank">ITER Wiki</a><br><a href="https://iter.org" target="_blank">Iter (Offizelle Website)</a>'), header=header.replace('--name--', "ITER - Forschung in Europa"))
 
 @app.route('/iter/status')
 def status():
-    return render_template('Iter/iter_status.html', footer=footer, header=header.replace('--name--', "ITER - Status"))
+    return render_template('Iter/iter_status.html', footer=footer.replace('--sources--', '<a href="https://de.wikipedia.org/wiki/ITER" target="_blank">ITER Wiki</a><br><a href="https://iter.org" target="_blank">Iter (Offizelle Website)</a>'), header=header.replace('--name--', "ITER - Status"))
 
 @app.route('/basics') #Creating basics sub page and rendering specified template
 def basics():

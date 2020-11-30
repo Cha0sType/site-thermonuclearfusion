@@ -9,45 +9,48 @@
 </head>
 
 <body>
-    {{ header|safe }}
     <div class="content">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam aperiam doloremque velit amet
-            officia natus iure in? Quam, expedita velit et sint ex laborum quas perspiciatis. Tempora, fugit
-            perspiciatis?
-        </p>
-        <img src="" alt="404 Not found">
-    </div>
-
-    {{ footer|safe }}
+        {{ header|safe }}
         <h2>
             Was ist der Status von ITER?
         </h2>
         <img src="{{url_for('static', filename='img/iter-inside.jpg')}}" alt="404 Image not found">
         <p>
-            Der Bau von ITEr begann 2007 und wird sich vorraussichtlich über 2025 herrausstrecken. In 2025 sollen die
+            Der Bau von ITER begann 2007 und wird sich vorraussichtlich über 2025 herrausstrecken. In 2025 sollen die
             ersten Experimente mit Wasserstoff statt finden, danach sollen die drei wesentlichen Heizelemente
             installiert werden. 2035 soll dann erste der Deuterium Betrieb beginnen. Ein Problem das zudem den Start
             verzögern könnte, ist die Tritium Versorgung. Momentan stammt sämtliches Tritum aus noch laufenden
-            schwerwassermoderierten (Schweres Wasser oder auch Deuteriumdioxid DO²) Kernspaltungsreaktoren, da dieses
+            schwerwassermoderierten Kernspaltungsreaktoren (Schweres Wasser oder auch Deuteriumdioxid [DO²]), da dieses
             allerdings eine Halbwertszeit von 12 Jahren hat, zerfällt es bevor es bei ITER benötigt wird.
         </p>
     </div>
 
-
+    {{ footer|safe }}
 </body>
-<<<<<<< HEAD
 
-=======
-    <style>
 
-        img {
-            margin-left: 7.1vw;
-        }
 
-        .content {
-            margin-bottom: 20vw;
-        }
-    </style>
->>>>>>> 6601b396886644f7ace50682d4add17a099460ea
+<style>
+    h2 {
+        padding-top: 1.5vw;
+        padding-left: 7.1vw;
+        color: gray;
+        font-weight: normal;
+        font-size: 4.1vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    img {
+        padding-left: 2vw;
+        margin-top: 5vw;
+        margin-right: 7.1vw;
+        width: 30vw;
+        float: right;
+    }
+
+    .content {
+        margin-bottom: 10vw;
+    }
+</style>
+
 </html>
