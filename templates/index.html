@@ -37,9 +37,50 @@
         <pagebutton onclick="location.href='iter'" style="margin-left: 65vw; margin-top: 0.5;">
             ITER - Ein europäisches Projekt
         </pagebutton>
-        <div style="margin-top: 11vw;"></div>
-        {{ footer|safe }}
+
+        <span id="displayBanner" style="display: none;"><div id="cookieBanner" style="position: absolute; margin-left: 50%; transform: translateX(-50%); margin-top: 1vw; height: 5vw; width: 68vw; display: flex; padding-left: 2vw; padding-right: 2vw; align-items: center; font-size: 2vw; color: #575757; background-color: #fffbd4; box-shadow: 0vw 0.5vw 1vw 0vw rgba(0, 0, 0, 0.2);">Während Ihrem Aufenthalt werden temporäre Cookies gespeichert <button onclick="removeBanner()" style='border: none; outline: none; font-size: 2vw; background-color: #0ed100; color: white; text-align: center; margin-left: 2vw; width: 7vw; height: 3vw; cursor: pointer;'>OK</button></div></span>
     </body>
+    <div style="margin-top: 11vw;"></div>
+    {{ footer|safe }}
 
 </html>
+<style>
+
+    @keyframes cookieBanner {
+        from {opacity: 0.0; margin-top: 2.5vw;}
+        to {opacity: 1.0; margin-top: 1vw;}
+    }
+
+    @keyframes cookieBannerBack {
+        from {opacity: 1.0; margin-top: 1vw;}
+        to {opacity: 0.0; margin-top: 2.5vw;}
+    }
+
+    #animateCookieBanner {
+        animation: cookieBanner 0.4s ease;
+    }
+
+    #animateCookieBannerBack {
+        animation: cookieBannerBack 0.4s ease;
+    }
+
+</style>
+<script>
+    
+    if (!document.cookie.includes("seenCookieBanner")) {
+        setTimeout(() => {
+            document.getElementById('cookieBanner').id = "animateCookieBanner";
+            document.getElementById('displayBanner').style.display = "block";
+        }, 1500);
+    }
+
+    function removeBanner() {
+        document.cookie = document.cookie + "seenCookieBanner";
+        document.getElementById('animateCookieBanner').id = "animateCookieBannerBack";
+        setTimeout(() => {
+            document.getElementById('displayBanner').style.display = "none";
+        }, 400);
+    }
+
+</script>
 <script src="{{url_for('static', filename='scripts/index.js')}}"></script>
