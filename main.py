@@ -59,19 +59,19 @@ def bedingungen():
 
 @app.route('/reactors') # Creating reactors sub page and rendering specified template
 def reactors():
-    return render_template('Reactors/reactor_index.html', footer=footer, header=header.replace('--name--', "Reaktoren"))
+    return render_template('Reactors/reactor_index.html', footer=footer.replace('--sources--', 'Für diese Seite<br>gibt es keine<br>Quellen'), header=header.replace('--name--', "Reaktoren"))
 
 @app.route('/reactors/stellarator') # Creating stellerator sub page of reactors and rendering specified template
 def stellarator():
-    return render_template('Reactors/Stellarator.html', footer=footer, header=header.replace('--name--', "Stellarator"))
+    return render_template('Reactors/Stellarator.html', footer=footer.replace('--sources--', '<a href="https://de.wikipedia.org/wiki/Stellarator" target="_blank">Stellarator Wiki</a>'), header=header.replace('--name--', "Stellarator"))
 
 @app.route('/reactors/tokamak') # Creating tokamak sub page of reactors and rendering specified template
 def tokamak():
-    return render_template('Reactors/tokamak.html', footer=footer, header=header.replace('--name--', "Tokamak"))
+    return render_template('Reactors/tokamak.html', footer=footer.replace('--sources--', '<a href="https://de.wikipedia.org/wiki/Tokamak" target="_blank">Tokamak Wiki</a>'), header=header.replace('--name--', "Tokamak"))
 
 @app.route('/reactors/vergleich') # Creating vergleich sub page of reactors and rendering specified template
 def vergleich():
-    return render_template('Reactors/vergleich.html', footer=footer, header=header.replace('--name--', "Vergleich"))
+    return render_template('Reactors/vergleich.html', footer=footer.replace('--sources--', '<a href="https://de.wikipedia.org/wiki/Stellarator" target="_blank">Stellarator Wiki</a><br><a href="https://de.wikipedia.org/wiki/Tokamak" target="_blank">Tokamak Wiki</a>'), header=header.replace('--name--', "Vergleich"))
 
 @app.route('/quiz')
 def quiz():
