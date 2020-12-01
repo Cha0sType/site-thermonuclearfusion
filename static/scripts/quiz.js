@@ -1,9 +1,9 @@
 
-questions = ["Wie heiß muss es mindestens in einem Fusionsreaktor sein,<br>damit er auf der Erde funktioniert?", "3", "Wofür steht die Abkürzung ITER?", "5", "Welche Halbwertszeit hat Tritium?", "7", "Wo wird ITER gebaut?", "Wie viele Neutronen hat Deuterium<br>und wie viele Tritium?", "10"];
-a1 = ["100 Tsd. °C", "3", "Internationaler Toller Erfindungsreaktor", "5", "12,1 Jahre", "7", "Im Süden Frankreichs", "Deuterium hat eins, Tritium zwei", "10"];
-a2 = ["100 Mio. °C", "3", "<span style='font-size: 1.8vw;'>International Thermonuclear Experimental Reactor</span>", "5", "12,2 Jahre", "7", "Im Süden Spanienes", "Deuterium hat drei, Tritium zwei", "10"];
-a3 = ["100 Mrd. °C", "3", "International Testing Experiment Reactor", "5", "12,3 Jahre", "7", "Im Südosten Frankreichs", "Deuterium hat keine, Tritium drei", "10"];
-correctAnswers = [1, 2, 3, 2, 3, 3, 1, 1, 1, 2];
+questions = ["Wie heiß muss es mindestens in einem Fusionsreaktor sein,<br>damit er auf der Erde funktioniert?", "Wann wurde der Tokamak erfunden?", "Wofür steht die Abkürzung ITER?", "Wann wurde der Stellarator erfunden?", "Welche Halbwertszeit hat Tritium?", "Wer hat den Tokamak weiterentwickelt?", "Wo wird ITER gebaut?", "Wie viele Neutronen hat Deuterium<br>und wie viele Tritium?", "Wie nennt man die Barriere bei Atomen,<br>bei der andere Atome abgestoßen werden?"];
+a1 = ["100 Tsd. °C", "1939", "Internationaler Toller Erfindungsreaktor", "1945", "12,1 Jahre", "Sacharow und Igor Tamm", "Im Süden Frankreichs", "Deuterium hat eins, Tritium zwei", "Colombbarriere"];
+a2 = ["100 Mio. °C", "1953", "<span style='font-size: 1.8vw;'>International Thermonuclear Experimental Reactor</span>", "1951", "12,2 Jahre", "Peter Shaw und Bob Andrews", "Im Süden Spanienes", "Deuterium hat drei, Tritium zwei", "Coulombbarriere"];
+a3 = ["100 Mrd. °C", "1949", "International Testing Experiment Reactor", "2004", "12,3 Jahre", "Aleks und Vladimir Gorbatschow", "Im Südosten Frankreichs", "Deuterium hat keine, Tritium drei", "Cuolombbarriere"];
+correctAnswers = [1, 2, 3, 2, 2, 3, 1, 1, 1, 2];
 //   Question No. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
 questionNum = 0;
