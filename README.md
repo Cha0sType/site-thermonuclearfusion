@@ -1,6 +1,5 @@
 # Readme
 Live share link (temporary):
-https://prod.liveshare.vsengsaas.visualstudio.com/join?22952742EECCCC4D26A73428DBFC22360FF9
 
 Other things to share:
 
