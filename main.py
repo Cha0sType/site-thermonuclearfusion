@@ -7,7 +7,7 @@ with open('server_config.json', 'r') as server: #Opening and loading JSON config
 
 
 PORT = config["port"]
-if config["debug"] == "true": #Testing for false because if it's an invalid input in the config, it is usually the best to go with debug turned off
+if config["debug"] == "true": #Testing for true because if it's an invalid input in the config, it is usually the best to go with debug turned off
     debug = True
 else:
     debug = False
