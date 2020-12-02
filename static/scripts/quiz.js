@@ -1,7 +1,7 @@
 
 questions = ["Wie heiß muss es mindestens in einem Fusionsreaktor sein,<br>damit er auf der Erde funktioniert?", "Wann wurde der Tokamak erfunden?", "Wofür steht die Abkürzung ITER?", "Wann wurde der Stellarator erfunden?", "Welche Halbwertszeit hat Tritium?", "Wer hat den Tokamak weiterentwickelt?", "Wo wird ITER gebaut?", "Wie viele Neutronen hat Deuterium<br>und wie viele Tritium?", "Wie nennt man die Barriere bei Atomen,<br>bei der andere Atome abgestoßen werden?"];
 a1 = ["100 Tsd. °C", "1939", "Internationaler Toller Erfindungsreaktor", "1945", "12,1 Jahre", "Andrej Sacharow und Igor Tamm", "Im Süden Frankreichs", "Deuterium hat eins, Tritium zwei", "Colombbarriere"];
-a2 = ["100 Mio. °C", "1953", "<span style='font-size: 1.8vw;'>International Thermonuclear Experimental Reactor</span>", "1951", "12,2 Jahre", "Peter Shaw und Bob Andrews", "Im Süden Spanienes", "Deuterium hat drei, Tritium zwei", "Coulombbarriere"];
+a2 = ["100 Mio. °C", "1953", "<span style='font-size: 1.8vw;'>International Thermonuclear Experimental Reactor</span>", "1951", "12,2 Jahre", "Peter Shaw und Bob Andrews", "Im Süden Spaniens", "Deuterium hat drei, Tritium zwei", "Coulombbarriere"];
 a3 = ["100 Mrd. °C", "1949", "International Testing Experiment Reactor", "2004", "12,3 Jahre", "Aleks und Vladimir Gorbatschow", "Im Südosten Frankreichs", "Deuterium hat keine, Tritium drei", "Cuolombbarriere"];
 correctAnswers = [1, 2, 3, 2, 2, 3, 1, 1, 1, 2];
 //   Question No. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
